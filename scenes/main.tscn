@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://3tfkgi66bt6p"]
+
+[ext_resource type="Texture2D" uid="uid://bdqo3hos6j4nh" path="res://assets/sprites/backgrounds/Fart-house-bkg-Temp.png" id="1_1g4y4"]
+[ext_resource type="Texture2D" uid="uid://dmspihrqbrknl" path="res://assets/sprites/player/Fart-house-character-sprite.png" id="2_uad3p"]
+[ext_resource type="Script" path="res://scenes/playermove.gd" id="3_dndqv"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Background" type="Sprite2D" parent="."]
+texture = ExtResource("1_1g4y4")
+
+[node name="Player" type="Sprite2D" parent="."]
+texture = ExtResource("2_uad3p")
+script = ExtResource("3_dndqv")
