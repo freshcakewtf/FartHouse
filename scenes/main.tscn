@@ -1,8 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://3tfkgi66bt6p"]
+[gd_scene load_steps=8 format=3 uid="uid://3tfkgi66bt6p"]
 
 [ext_resource type="Texture2D" uid="uid://bdqo3hos6j4nh" path="res://assets/sprites/backgrounds/Fart-house-bkg-Temp.png" id="1_1g4y4"]
 [ext_resource type="Texture2D" uid="uid://dmspihrqbrknl" path="res://assets/sprites/player/Fart-house-character-sprite.png" id="2_uad3p"]
 [ext_resource type="Script" path="res://scenes/playermove.gd" id="3_dndqv"]
+[ext_resource type="Texture2D" uid="uid://pf34vtbpsar6" path="res://assets/sprites/pillars/Fart-house-pillar.png" id="4_y33x4"]
+[ext_resource type="Script" path="res://scenes/pillarmove.gd" id="5_3s88n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fxrxg"]
+size = Vector2(126, 113)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rjsgp"]
+size = Vector2(97, 985.5)
 
 [node name="Node2D" type="Node2D"]
 
@@ -14,3 +22,54 @@ texture = ExtResource("1_1g4y4")
 [node name="Player" type="Sprite2D" parent="."]
 texture = ExtResource("2_uad3p")
 script = ExtResource("3_dndqv")
+
+[node name="Area2D" type="Area2D" parent="Player"]
+
+[node name="Collision_player" type="CollisionShape2D" parent="Player/Area2D"]
+position = Vector2(0, -1.5)
+shape = SubResource("RectangleShape2D_fxrxg")
+
+[node name="Pillar1" type="Sprite2D" parent="."]
+position = Vector2(1056, 0)
+texture = ExtResource("4_y33x4")
+script = ExtResource("5_3s88n")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Pillar1"]
+
+[node name="Collision_Bottom" type="CollisionShape2D" parent="Pillar1/StaticBody2D"]
+position = Vector2(-0.5, 591.25)
+shape = SubResource("RectangleShape2D_rjsgp")
+
+[node name="Collision_Top" type="CollisionShape2D" parent="Pillar1/StaticBody2D"]
+position = Vector2(-0.5, -591)
+shape = SubResource("RectangleShape2D_rjsgp")
+
+[node name="Pillar2" type="Sprite2D" parent="."]
+position = Vector2(1856, 0)
+texture = ExtResource("4_y33x4")
+script = ExtResource("5_3s88n")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Pillar2"]
+
+[node name="Collision_Bottom" type="CollisionShape2D" parent="Pillar2/StaticBody2D"]
+position = Vector2(-0.5, 591.25)
+shape = SubResource("RectangleShape2D_rjsgp")
+
+[node name="Collision_Top" type="CollisionShape2D" parent="Pillar2/StaticBody2D"]
+position = Vector2(-0.5, -591)
+shape = SubResource("RectangleShape2D_rjsgp")
+
+[node name="Pillar3" type="Sprite2D" parent="."]
+position = Vector2(2663.96, 0)
+texture = ExtResource("4_y33x4")
+script = ExtResource("5_3s88n")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Pillar3"]
+
+[node name="Collision_Bottom" type="CollisionShape2D" parent="Pillar3/StaticBody2D"]
+position = Vector2(-0.5, 591.25)
+shape = SubResource("RectangleShape2D_rjsgp")
+
+[node name="Collision_Top" type="CollisionShape2D" parent="Pillar3/StaticBody2D"]
+position = Vector2(-0.5, -591)
+shape = SubResource("RectangleShape2D_rjsgp")
