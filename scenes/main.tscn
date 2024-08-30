@@ -1,75 +1,160 @@
-[gd_scene load_steps=8 format=3 uid="uid://3tfkgi66bt6p"]
+[gd_scene load_steps=24 format=3 uid="uid://3tfkgi66bt6p"]
 
 [ext_resource type="Texture2D" uid="uid://bdqo3hos6j4nh" path="res://assets/sprites/backgrounds/Fart-house-bkg-Temp.png" id="1_1g4y4"]
 [ext_resource type="Texture2D" uid="uid://dmspihrqbrknl" path="res://assets/sprites/player/Fart-house-character-sprite.png" id="2_uad3p"]
 [ext_resource type="Script" path="res://scenes/playermove.gd" id="3_dndqv"]
+[ext_resource type="Texture2D" uid="uid://d3keeyjg7n8s3" path="res://assets/sprites/player/Fart-house-character-sprite-shoot/Fart-house-character-sprite-shoo2.png" id="4_usf5v"]
 [ext_resource type="Texture2D" uid="uid://pf34vtbpsar6" path="res://assets/sprites/pillars/Fart-house-pillar.png" id="4_y33x4"]
 [ext_resource type="Script" path="res://scenes/pillarmove.gd" id="5_3s88n"]
+[ext_resource type="Texture2D" uid="uid://d1mu86wld2y3e" path="res://assets/sprites/player/Fart-house-character-sprite-shoot/Fart-house-character-sprite-shoot1.png" id="5_8cmd7"]
+[ext_resource type="Texture2D" uid="uid://b7e84518oqihi" path="res://assets/sprites/Slime/PillarSlime/PillarSlime1.png" id="6_7fnqs"]
+[ext_resource type="Texture2D" uid="uid://b4vfmlutanwng" path="res://assets/sprites/player/Fart-house-character-sprite-shoot/Fart-house-character-sprite-shoot3.png" id="6_pl6dl"]
+[ext_resource type="Texture2D" uid="uid://cl2cjq6pygr5j" path="res://assets/sprites/player/Fart-house-character-sprite-shoot/Fart-house-character-sprite-shoot4.png" id="7_4njqb"]
+[ext_resource type="Texture2D" uid="uid://cgbm06ngkwqwf" path="res://assets/sprites/Slime/PillarSlime/PillarSlime2.png" id="7_irgur"]
+[ext_resource type="Texture2D" uid="uid://tb6ipgndr4k4" path="res://assets/sprites/player/Fart/Fart0.png" id="8_4xfbe"]
+[ext_resource type="Texture2D" uid="uid://bwj0rvv08gpj4" path="res://assets/sprites/Slime/PillarSlime/PillarSlime3.png" id="8_43hw1"]
+[ext_resource type="Texture2D" uid="uid://6cfnrrhsc6v2" path="res://assets/sprites/player/Fart/Fart1.png" id="8_xj4ob"]
+[ext_resource type="Texture2D" uid="uid://btrn5j3hcg73f" path="res://assets/sprites/player/Fart/Fart2.png" id="9_smy8p"]
+[ext_resource type="Texture2D" uid="uid://cowmykdkydfvl" path="res://assets/sprites/player/Fart/Fart3.png" id="10_ksgcx"]
+[ext_resource type="Texture2D" uid="uid://difwa3j3py6wm" path="res://assets/sprites/player/Fart/Fart4.png" id="11_xnhbb"]
+[ext_resource type="Script" path="res://scenes/fart.gd" id="12_ref2a"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_fxrxg"]
-size = Vector2(126, 113)
+[sub_resource type="CircleShape2D" id="CircleShape2D_4jib6"]
+radius = 64.1249
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_j221n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_uad3p")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_usf5v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_8cmd7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_pl6dl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_4njqb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_usf5v")
+}],
+"loop": true,
+"name": &"shoot",
+"speed": 12.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cu6ri"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": null
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_4xfbe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_xj4ob")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_smy8p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ksgcx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_xnhbb")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"fart",
+"speed": 12.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"idle",
+"speed": 12.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_02tql"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_7fnqs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_irgur")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_43hw1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rjsgp"]
 size = Vector2(97, 985.5)
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Camera2D" type="Camera2D" parent="."]
-
 [node name="Background" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+scale = Vector2(1, 1.027)
 texture = ExtResource("1_1g4y4")
 
-[node name="Player" type="Sprite2D" parent="."]
-texture = ExtResource("2_uad3p")
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(960, 540)
+collision_mask = 6
 script = ExtResource("3_dndqv")
 
-[node name="Area2D" type="Area2D" parent="Player"]
+[node name="Collision_Player" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("CircleShape2D_4jib6")
+debug_color = Color(0.955174, 0.144377, 0.597607, 0.42)
 
-[node name="Collision_player" type="CollisionShape2D" parent="Player/Area2D"]
-position = Vector2(0, -1.5)
-shape = SubResource("RectangleShape2D_fxrxg")
+[node name="Player" type="AnimatedSprite2D" parent="CharacterBody2D"]
+sprite_frames = SubResource("SpriteFrames_j221n")
+animation = &"shoot"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D/Player"]
+position = Vector2(99, 6)
+sprite_frames = SubResource("SpriteFrames_cu6ri")
+animation = &"fart"
+script = ExtResource("12_ref2a")
 
 [node name="Pillar1" type="Sprite2D" parent="."]
-position = Vector2(1056, 0)
+light_mask = 2
+position = Vector2(2100, 540)
 texture = ExtResource("4_y33x4")
 script = ExtResource("5_3s88n")
+
+[node name="slime" type="AnimatedSprite2D" parent="Pillar1"]
+show_behind_parent = true
+sprite_frames = SubResource("SpriteFrames_02tql")
+autoplay = "default"
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Pillar1"]
+collision_layer = 2
 
-[node name="Collision_Bottom" type="CollisionShape2D" parent="Pillar1/StaticBody2D"]
+[node name="Collision_Pillar_Bottom" type="CollisionShape2D" parent="Pillar1/StaticBody2D"]
+light_mask = 0
 position = Vector2(-0.5, 591.25)
 shape = SubResource("RectangleShape2D_rjsgp")
 
-[node name="Collision_Top" type="CollisionShape2D" parent="Pillar1/StaticBody2D"]
-position = Vector2(-0.5, -591)
-shape = SubResource("RectangleShape2D_rjsgp")
-
-[node name="Pillar2" type="Sprite2D" parent="."]
-position = Vector2(1856, 0)
-texture = ExtResource("4_y33x4")
-script = ExtResource("5_3s88n")
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Pillar2"]
-
-[node name="Collision_Bottom" type="CollisionShape2D" parent="Pillar2/StaticBody2D"]
-position = Vector2(-0.5, 591.25)
-shape = SubResource("RectangleShape2D_rjsgp")
-
-[node name="Collision_Top" type="CollisionShape2D" parent="Pillar2/StaticBody2D"]
-position = Vector2(-0.5, -591)
-shape = SubResource("RectangleShape2D_rjsgp")
-
-[node name="Pillar3" type="Sprite2D" parent="."]
-position = Vector2(2663.96, 0)
-texture = ExtResource("4_y33x4")
-script = ExtResource("5_3s88n")
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Pillar3"]
-
-[node name="Collision_Bottom" type="CollisionShape2D" parent="Pillar3/StaticBody2D"]
-position = Vector2(-0.5, 591.25)
-shape = SubResource("RectangleShape2D_rjsgp")
-
-[node name="Collision_Top" type="CollisionShape2D" parent="Pillar3/StaticBody2D"]
+[node name="Collision_Pillar_Top" type="CollisionShape2D" parent="Pillar1/StaticBody2D"]
 position = Vector2(-0.5, -591)
 shape = SubResource("RectangleShape2D_rjsgp")
