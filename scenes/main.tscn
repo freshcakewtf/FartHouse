@@ -1,12 +1,17 @@
-[gd_scene load_steps=24 format=3 uid="uid://3tfkgi66bt6p"]
+[gd_scene load_steps=38 format=3 uid="uid://3tfkgi66bt6p"]
 
-[ext_resource type="Texture2D" uid="uid://bdqo3hos6j4nh" path="res://assets/sprites/backgrounds/Fart-house-bkg-Temp.png" id="1_1g4y4"]
+[ext_resource type="Texture2D" uid="uid://cxuur7fbhma26" path="res://assets/sprites/backgrounds/Fart_House_BKG.png" id="1_xw020"]
+[ext_resource type="Texture2D" uid="uid://cgaoy6xida4fu" path="res://assets/sprites/backgrounds/Fart_House_Brick_BKG.png" id="2_dj6wu"]
 [ext_resource type="Texture2D" uid="uid://dmspihrqbrknl" path="res://assets/sprites/player/Fart-house-character-sprite.png" id="2_uad3p"]
+[ext_resource type="Script" path="res://scenes/Brickmove.gd" id="3_dhkk4"]
 [ext_resource type="Script" path="res://scenes/playermove.gd" id="3_dndqv"]
+[ext_resource type="Texture2D" uid="uid://ctefbgbflwpxa" path="res://assets/sprites/backgrounds/Fart_House_pipes_BKG.png" id="4_5li5t"]
+[ext_resource type="Texture2D" uid="uid://cxy6fc8x5qsr3" path="res://assets/sprites/backgrounds/Fart_House_sewerHoleBKG.png" id="4_k52x2"]
 [ext_resource type="Texture2D" uid="uid://d3keeyjg7n8s3" path="res://assets/sprites/player/Fart-house-character-sprite-shoot/Fart-house-character-sprite-shoo2.png" id="4_usf5v"]
 [ext_resource type="Texture2D" uid="uid://pf34vtbpsar6" path="res://assets/sprites/pillars/Fart-house-pillar.png" id="4_y33x4"]
 [ext_resource type="Script" path="res://scenes/pillarmove.gd" id="5_3s88n"]
 [ext_resource type="Texture2D" uid="uid://d1mu86wld2y3e" path="res://assets/sprites/player/Fart-house-character-sprite-shoot/Fart-house-character-sprite-shoot1.png" id="5_8cmd7"]
+[ext_resource type="Script" path="res://scenes/Pipemove.gd" id="5_kyxkh"]
 [ext_resource type="Texture2D" uid="uid://b7e84518oqihi" path="res://assets/sprites/Slime/PillarSlime/PillarSlime1.png" id="6_7fnqs"]
 [ext_resource type="Texture2D" uid="uid://b4vfmlutanwng" path="res://assets/sprites/player/Fart-house-character-sprite-shoot/Fart-house-character-sprite-shoot3.png" id="6_pl6dl"]
 [ext_resource type="Texture2D" uid="uid://cl2cjq6pygr5j" path="res://assets/sprites/player/Fart-house-character-sprite-shoot/Fart-house-character-sprite-shoot4.png" id="7_4njqb"]
@@ -18,6 +23,13 @@
 [ext_resource type="Texture2D" uid="uid://cowmykdkydfvl" path="res://assets/sprites/player/Fart/Fart3.png" id="10_ksgcx"]
 [ext_resource type="Texture2D" uid="uid://difwa3j3py6wm" path="res://assets/sprites/player/Fart/Fart4.png" id="11_xnhbb"]
 [ext_resource type="Script" path="res://scenes/fart.gd" id="12_ref2a"]
+[ext_resource type="AudioStream" uid="uid://bjgpr72lycbsx" path="res://assets/sounds /sfx/Artlist Studios - Toony Tunes - Wet Fart.mp3" id="20_q0xmq"]
+[ext_resource type="AudioStream" uid="uid://dxhdpqqghhb5f" path="res://assets/sounds /sfx/Artlist Studios - Toony Tunes - Smelly Fart.mp3" id="21_a21m7"]
+[ext_resource type="AudioStream" uid="uid://dqon5j0sp647c" path="res://assets/sounds /sfx/Artlist Studios - Toony Tunes - Small Fart.mp3" id="22_w8ru6"]
+[ext_resource type="AudioStream" uid="uid://ybbx5umg6w1i" path="res://assets/sounds /music/Peter Spacey - Moon Dance.mp3" id="24_qtcs8"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vqfuq"]
+radius = 170.047
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4jib6"]
 radius = 64.1249
@@ -90,6 +102,20 @@ animations = [{
 "speed": 12.0
 }]
 
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_f0feh"]
+streams_count = 3
+stream_0/stream = ExtResource("20_q0xmq")
+stream_1/stream = ExtResource("21_a21m7")
+stream_2/stream = ExtResource("22_w8ru6")
+
+[sub_resource type="Gradient" id="Gradient_o2703"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_0s1gu"]
+gradient = SubResource("Gradient_o2703")
+fill = 1
+fill_from = Vector2(0.502294, 0.502294)
+fill_to = Vector2(0.541284, 0.573394)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_02tql"]
 animations = [{
 "frames": [{
@@ -105,22 +131,70 @@ animations = [{
 "loop": true,
 "name": &"default",
 "speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": null
+}],
+"loop": true,
+"name": &"destroy",
+"speed": 12.0
 }]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nqcs4"]
+size = Vector2(122, 202)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rjsgp"]
 size = Vector2(97, 985.5)
 
 [node name="Node2D" type="Node2D"]
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("24_qtcs8")
+volume_db = -1.0
+autoplay = true
+parameters/looping = true
+
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(960, 540)
 scale = Vector2(1, 1.027)
-texture = ExtResource("1_1g4y4")
+texture = ExtResource("1_xw020")
+
+[node name="BackgroundBricks" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+scale = Vector2(1, 1.027)
+texture = ExtResource("2_dj6wu")
+script = ExtResource("3_dhkk4")
+
+[node name="BackgroundSewer" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+scale = Vector2(1, 1.027)
+texture = ExtResource("4_k52x2")
+script = ExtResource("3_dhkk4")
+
+[node name="BackgroundBricks2" type="Sprite2D" parent="."]
+position = Vector2(2880, 540)
+scale = Vector2(1, 1.027)
+texture = ExtResource("2_dj6wu")
+script = ExtResource("3_dhkk4")
+
+[node name="BackgroundPipes" type="Sprite2D" parent="."]
+position = Vector2(2880, 540)
+texture = ExtResource("4_5li5t")
+script = ExtResource("5_kyxkh")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 position = Vector2(960, 540)
-collision_mask = 6
+collision_mask = 258
 script = ExtResource("3_dndqv")
+
+[node name="PlayershotDetect" type="Area2D" parent="CharacterBody2D"]
+collision_layer = 16
+collision_mask = 256
+
+[node name="shotcollision" type="CollisionShape2D" parent="CharacterBody2D/PlayershotDetect"]
+shape = SubResource("CircleShape2D_vqfuq")
+debug_color = Color(0.804701, 0.615494, 0, 0.42)
 
 [node name="Collision_Player" type="CollisionShape2D" parent="CharacterBody2D"]
 shape = SubResource("CircleShape2D_4jib6")
@@ -136,22 +210,46 @@ sprite_frames = SubResource("SpriteFrames_cu6ri")
 animation = &"fart"
 script = ExtResource("12_ref2a")
 
+[node name="shootsound" type="AudioStreamPlayer2D" parent="CharacterBody2D/Player/AnimatedSprite2D"]
+position = Vector2(-1059, -546)
+stream = SubResource("AudioStreamRandomizer_f0feh")
+volume_db = 5.0
+
+[node name="PointLight2D" type="PointLight2D" parent="CharacterBody2D"]
+position = Vector2(-36, -83)
+scale = Vector2(114.111, 114.185)
+energy = 0.8
+blend_mode = 1
+range_z_min = 0
+range_z_max = 0
+shadow_color = Color(0.0553149, 0.0334962, 0.0461937, 0)
+texture = SubResource("GradientTexture2D_0s1gu")
+
 [node name="Pillar1" type="Sprite2D" parent="."]
-light_mask = 2
 position = Vector2(2100, 540)
 texture = ExtResource("4_y33x4")
 script = ExtResource("5_3s88n")
 
-[node name="slime" type="AnimatedSprite2D" parent="Pillar1"]
+[node name="slimeanimation" type="AnimatedSprite2D" parent="Pillar1"]
 show_behind_parent = true
 sprite_frames = SubResource("SpriteFrames_02tql")
 autoplay = "default"
+
+[node name="slime" type="StaticBody2D" parent="Pillar1/slimeanimation"]
+position = Vector2(-2100, -540)
+collision_layer = 256
+collision_mask = 17
+
+[node name="slimecollision" type="CollisionShape2D" parent="Pillar1/slimeanimation/slime"]
+light_mask = 0
+position = Vector2(2100, 548)
+shape = SubResource("RectangleShape2D_nqcs4")
+debug_color = Color(1.44392e-06, 0.645726, 0.253689, 0.42)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Pillar1"]
 collision_layer = 2
 
 [node name="Collision_Pillar_Bottom" type="CollisionShape2D" parent="Pillar1/StaticBody2D"]
-light_mask = 0
 position = Vector2(-0.5, 591.25)
 shape = SubResource("RectangleShape2D_rjsgp")
 

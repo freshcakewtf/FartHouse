@@ -1,7 +1,7 @@
 extends Node2D
 
 var speed = 200
-var initial_x = 1280  # The initial x position of the pillar, adjust as needed
+var initial_x = 1920  # The initial x position of the pillar, adjust as needed
 var min_y = 100  # Minimum y position for the pillar
 var max_y = 400  # Maximum y position for the pillar
 

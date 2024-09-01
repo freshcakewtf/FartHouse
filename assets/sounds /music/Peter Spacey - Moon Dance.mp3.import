@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ybbx5umg6w1i"
+path="res://.godot/imported/Peter Spacey - Moon Dance.mp3-723d4025d9b1ee9e8ce4c5fee9372c43.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds /music/Peter Spacey - Moon Dance.mp3"
+dest_files=["res://.godot/imported/Peter Spacey - Moon Dance.mp3-723d4025d9b1ee9e8ce4c5fee9372c43.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

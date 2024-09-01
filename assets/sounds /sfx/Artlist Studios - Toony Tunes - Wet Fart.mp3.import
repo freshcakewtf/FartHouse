@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bjgpr72lycbsx"
+path="res://.godot/imported/Artlist Studios - Toony Tunes - Wet Fart.mp3-7ddcc6b50acab74d4cc5e1a687f645f2.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds /sfx/Artlist Studios - Toony Tunes - Wet Fart.mp3"
+dest_files=["res://.godot/imported/Artlist Studios - Toony Tunes - Wet Fart.mp3-7ddcc6b50acab74d4cc5e1a687f645f2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

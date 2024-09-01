@@ -2,7 +2,7 @@ extends CharacterBody2D  # Use CharacterBody2D for collision detection
 
 # Movement speed of the player
 @export var speed: float = 800
-@export var shoot_duration: float = 0.5 # Duration of the "shoot" animation
+@export var shoot_duration: float = 0.5  # Duration of the "shoot" animation
 
 # Define the boundaries (adjust as needed)
 const BOUNDARY_LEFT: float = 0
@@ -48,4 +48,17 @@ func play_shoot_animation() -> void:
 	if $Player:  # Ensure the Player node exists
 		$Player.play("shoot")
 		await get_tree().create_timer(shoot_duration).timeout
-		$Player.play("idle") # Return to idle after the shoot animation is done
+		$Player.play("idle")  # Return to idle after the shoot animation is done
+
+	# Check collision with slime during shoot
+	var player_shot_detect = $PlayershotDetect
+	var overlapping_bodies = player_shot_detect.get_overlapping_bodies()
+
+	if overlapping_bodies.size() > 0:
+		print("Overlapping bodies: ", overlapping_bodies)
+		for body in overlapping_bodies:
+			if body.name == "slime":
+				print("Slime detected: Changing collision layer")
+				# Ensure that you are accessing the correct node for slime
+				# You might need to use `body.get_node("slimecollision")` or similar to adjust the collision layer
+				body.collision_layer = 16 # Change slime's collision layer to allow player to pass through
