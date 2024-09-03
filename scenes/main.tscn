@@ -1,17 +1,17 @@
-[gd_scene load_steps=38 format=3 uid="uid://3tfkgi66bt6p"]
+[gd_scene load_steps=53 format=3 uid="uid://3tfkgi66bt6p"]
 
 [ext_resource type="Texture2D" uid="uid://cxuur7fbhma26" path="res://assets/sprites/backgrounds/Fart_House_BKG.png" id="1_xw020"]
 [ext_resource type="Texture2D" uid="uid://cgaoy6xida4fu" path="res://assets/sprites/backgrounds/Fart_House_Brick_BKG.png" id="2_dj6wu"]
 [ext_resource type="Texture2D" uid="uid://dmspihrqbrknl" path="res://assets/sprites/player/Fart-house-character-sprite.png" id="2_uad3p"]
-[ext_resource type="Script" path="res://scenes/Brickmove.gd" id="3_dhkk4"]
-[ext_resource type="Script" path="res://scenes/playermove.gd" id="3_dndqv"]
+[ext_resource type="Script" path="res://scripts/Brickmove.gd" id="3_dhkk4"]
+[ext_resource type="Script" path="res://scripts/playerControl.gd" id="3_dndqv"]
 [ext_resource type="Texture2D" uid="uid://ctefbgbflwpxa" path="res://assets/sprites/backgrounds/Fart_House_pipes_BKG.png" id="4_5li5t"]
 [ext_resource type="Texture2D" uid="uid://cxy6fc8x5qsr3" path="res://assets/sprites/backgrounds/Fart_House_sewerHoleBKG.png" id="4_k52x2"]
 [ext_resource type="Texture2D" uid="uid://d3keeyjg7n8s3" path="res://assets/sprites/player/Fart-house-character-sprite-shoot/Fart-house-character-sprite-shoo2.png" id="4_usf5v"]
 [ext_resource type="Texture2D" uid="uid://pf34vtbpsar6" path="res://assets/sprites/pillars/Fart-house-pillar.png" id="4_y33x4"]
-[ext_resource type="Script" path="res://scenes/pillarmove.gd" id="5_3s88n"]
+[ext_resource type="Script" path="res://scripts/pillarmove.gd" id="5_3s88n"]
 [ext_resource type="Texture2D" uid="uid://d1mu86wld2y3e" path="res://assets/sprites/player/Fart-house-character-sprite-shoot/Fart-house-character-sprite-shoot1.png" id="5_8cmd7"]
-[ext_resource type="Script" path="res://scenes/Pipemove.gd" id="5_kyxkh"]
+[ext_resource type="Script" path="res://scripts/pipeBKG.gd" id="5_kyxkh"]
 [ext_resource type="Texture2D" uid="uid://b7e84518oqihi" path="res://assets/sprites/Slime/PillarSlime/PillarSlime1.png" id="6_7fnqs"]
 [ext_resource type="Texture2D" uid="uid://b4vfmlutanwng" path="res://assets/sprites/player/Fart-house-character-sprite-shoot/Fart-house-character-sprite-shoot3.png" id="6_pl6dl"]
 [ext_resource type="Texture2D" uid="uid://cl2cjq6pygr5j" path="res://assets/sprites/player/Fart-house-character-sprite-shoot/Fart-house-character-sprite-shoot4.png" id="7_4njqb"]
@@ -22,14 +22,62 @@
 [ext_resource type="Texture2D" uid="uid://btrn5j3hcg73f" path="res://assets/sprites/player/Fart/Fart2.png" id="9_smy8p"]
 [ext_resource type="Texture2D" uid="uid://cowmykdkydfvl" path="res://assets/sprites/player/Fart/Fart3.png" id="10_ksgcx"]
 [ext_resource type="Texture2D" uid="uid://difwa3j3py6wm" path="res://assets/sprites/player/Fart/Fart4.png" id="11_xnhbb"]
-[ext_resource type="Script" path="res://scenes/fart.gd" id="12_ref2a"]
+[ext_resource type="Script" path="res://scripts/fart.gd" id="12_ref2a"]
 [ext_resource type="AudioStream" uid="uid://bjgpr72lycbsx" path="res://assets/sounds /sfx/Artlist Studios - Toony Tunes - Wet Fart.mp3" id="20_q0xmq"]
 [ext_resource type="AudioStream" uid="uid://dxhdpqqghhb5f" path="res://assets/sounds /sfx/Artlist Studios - Toony Tunes - Smelly Fart.mp3" id="21_a21m7"]
 [ext_resource type="AudioStream" uid="uid://dqon5j0sp647c" path="res://assets/sounds /sfx/Artlist Studios - Toony Tunes - Small Fart.mp3" id="22_w8ru6"]
 [ext_resource type="AudioStream" uid="uid://ybbx5umg6w1i" path="res://assets/sounds /music/Peter Spacey - Moon Dance.mp3" id="24_qtcs8"]
+[ext_resource type="Texture2D" uid="uid://1udm2nimijgt" path="res://assets/sprites/Slime/dead/Dead01.png" id="25_cywyh"]
+[ext_resource type="Texture2D" uid="uid://cw4wib00aekdw" path="res://assets/sprites/Slime/dead/Dead02.png" id="26_mhi8s"]
+[ext_resource type="Texture2D" uid="uid://bbpu3bajtvwa6" path="res://assets/sprites/Slime/dead/Dead03.png" id="27_j7gum"]
+[ext_resource type="Texture2D" uid="uid://csqqm7lkjyh5k" path="res://assets/sprites/bean/PNG_0001.png" id="31_h3n4h"]
+[ext_resource type="Script" path="res://scripts/bean.gd" id="31_wpenn"]
+[ext_resource type="Texture2D" uid="uid://co1nnfjtb14tg" path="res://assets/sprites/bean/PNG_0002.png" id="32_ls0fi"]
+[ext_resource type="Texture2D" uid="uid://cpis82gjsnite" path="res://assets/sprites/bean/PNG_0003.png" id="33_331fq"]
+[ext_resource type="Texture2D" uid="uid://bohbh8nrrbiix" path="res://assets/sprites/bean/PNG_0004.png" id="34_rjqa5"]
+[ext_resource type="Texture2D" uid="uid://ccocmvlj6rikt" path="res://assets/sprites/bean/PNG_0005.png" id="35_dhpo7"]
+[ext_resource type="Texture2D" uid="uid://bclygksrpw1s8" path="res://assets/sprites/bean/PNG_0006.png" id="36_maes6"]
+[ext_resource type="Texture2D" uid="uid://dugemc45fasgx" path="res://assets/sprites/bean/PNG_0007.png" id="37_xbg35"]
+[ext_resource type="Texture2D" uid="uid://bl7osairo753h" path="res://assets/sprites/bean/PNG_0008.png" id="38_b28f4"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m53el"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("31_h3n4h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_ls0fi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_331fq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_rjqa5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_dhpo7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_maes6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_xbg35")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_b28f4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_s3hla"]
+radius = 21.0
+height = 106.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_vqfuq"]
-radius = 170.047
+radius = 285.016
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4jib6"]
 radius = 64.1249
@@ -116,8 +164,31 @@ fill = 1
 fill_from = Vector2(0.502294, 0.502294)
 fill_to = Vector2(0.541284, 0.573394)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_6rnpl"]
+radius = 50.04
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rjsgp"]
+size = Vector2(103, 984.5)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_02tql"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("25_cywyh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_mhi8s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_j7gum")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": false,
+"name": &"dead",
+"speed": 12.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("6_7fnqs")
@@ -131,21 +202,10 @@ animations = [{
 "loop": true,
 "name": &"default",
 "speed": 12.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": null
-}],
-"loop": true,
-"name": &"destroy",
-"speed": 12.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nqcs4"]
-size = Vector2(122, 202)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_rjsgp"]
-size = Vector2(97, 985.5)
+size = Vector2(108, 202)
 
 [node name="Node2D" type="Node2D"]
 
@@ -183,9 +243,22 @@ position = Vector2(2880, 540)
 texture = ExtResource("4_5li5t")
 script = ExtResource("5_kyxkh")
 
+[node name="bean" type="StaticBody2D" parent="."]
+position = Vector2(540, 540)
+collision_layer = 65536
+collision_mask = 1048576
+script = ExtResource("31_wpenn")
+
+[node name="bean_anim" type="AnimatedSprite2D" parent="bean"]
+sprite_frames = SubResource("SpriteFrames_m53el")
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bean"]
+shape = SubResource("CapsuleShape2D_s3hla")
+
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 position = Vector2(960, 540)
-collision_mask = 258
+collision_mask = 262
 script = ExtResource("3_dndqv")
 
 [node name="PlayershotDetect" type="Area2D" parent="CharacterBody2D"]
@@ -205,7 +278,7 @@ sprite_frames = SubResource("SpriteFrames_j221n")
 animation = &"shoot"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D/Player"]
-position = Vector2(99, 6)
+position = Vector2(135, 6)
 sprite_frames = SubResource("SpriteFrames_cu6ri")
 animation = &"fart"
 script = ExtResource("12_ref2a")
@@ -225,34 +298,44 @@ range_z_max = 0
 shadow_color = Color(0.0553149, 0.0334962, 0.0461937, 0)
 texture = SubResource("GradientTexture2D_0s1gu")
 
+[node name="beanCollect" type="Area2D" parent="CharacterBody2D"]
+collision_layer = 1048576
+collision_mask = 65536
+
+[node name="Collect" type="CollisionShape2D" parent="CharacterBody2D/beanCollect"]
+shape = SubResource("CircleShape2D_6rnpl")
+
 [node name="Pillar1" type="Sprite2D" parent="."]
-position = Vector2(2100, 540)
+position = Vector2(2000, 540)
 texture = ExtResource("4_y33x4")
 script = ExtResource("5_3s88n")
-
-[node name="slimeanimation" type="AnimatedSprite2D" parent="Pillar1"]
-show_behind_parent = true
-sprite_frames = SubResource("SpriteFrames_02tql")
-autoplay = "default"
-
-[node name="slime" type="StaticBody2D" parent="Pillar1/slimeanimation"]
-position = Vector2(-2100, -540)
-collision_layer = 256
-collision_mask = 17
-
-[node name="slimecollision" type="CollisionShape2D" parent="Pillar1/slimeanimation/slime"]
-light_mask = 0
-position = Vector2(2100, 548)
-shape = SubResource("RectangleShape2D_nqcs4")
-debug_color = Color(1.44392e-06, 0.645726, 0.253689, 0.42)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Pillar1"]
 collision_layer = 2
 
 [node name="Collision_Pillar_Bottom" type="CollisionShape2D" parent="Pillar1/StaticBody2D"]
-position = Vector2(-0.5, 591.25)
+position = Vector2(13, 586)
 shape = SubResource("RectangleShape2D_rjsgp")
 
 [node name="Collision_Pillar_Top" type="CollisionShape2D" parent="Pillar1/StaticBody2D"]
-position = Vector2(-0.5, -591)
+position = Vector2(8.5, -586.25)
 shape = SubResource("RectangleShape2D_rjsgp")
+
+[node name="slime" type="StaticBody2D" parent="Pillar1"]
+show_behind_parent = true
+position = Vector2(-2100, -540)
+collision_layer = 256
+collision_mask = 17
+
+[node name="slimeanimation" type="AnimatedSprite2D" parent="Pillar1/slime"]
+show_behind_parent = true
+position = Vector2(2100, 540)
+sprite_frames = SubResource("SpriteFrames_02tql")
+animation = &"dead"
+autoplay = "default"
+
+[node name="slimecollision" type="CollisionShape2D" parent="Pillar1/slime"]
+light_mask = 0
+position = Vector2(2107, 548)
+shape = SubResource("RectangleShape2D_nqcs4")
+debug_color = Color(1.44392e-06, 0.645726, 0.253689, 0.42)
