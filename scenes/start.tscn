@@ -1,10 +1,12 @@
-[gd_scene load_steps=18 format=3 uid="uid://d4lmi5vt6067p"]
+[gd_scene load_steps=20 format=3 uid="uid://d4lmi5vt6067p"]
 
 [ext_resource type="AudioStream" uid="uid://druqo348sxbq8" path="res://assets/sounds /music/Ian Post - Breaking Point.mp3" id="1_i8ily"]
 [ext_resource type="Texture2D" uid="uid://cxuur7fbhma26" path="res://assets/sprites/backgrounds/Fart_House_BKG.png" id="2_h85d4"]
 [ext_resource type="Texture2D" uid="uid://cgaoy6xida4fu" path="res://assets/sprites/backgrounds/Fart_House_Brick_BKG.png" id="3_ui7ir"]
 [ext_resource type="Texture2D" uid="uid://cxy6fc8x5qsr3" path="res://assets/sprites/backgrounds/Fart_House_sewerHoleBKG.png" id="5_j5yvn"]
 [ext_resource type="Texture2D" uid="uid://ctefbgbflwpxa" path="res://assets/sprites/backgrounds/Fart_House_pipes_BKG.png" id="6_bfuti"]
+[ext_resource type="Script" path="res://scripts/StartScreen.gd" id="13_pcdot"]
+[ext_resource type="FontFile" uid="uid://cfpjgfrwatugl" path="res://assets/font/FreshCaked.otf" id="14_1xyqq"]
 [ext_resource type="Texture2D" uid="uid://pf34vtbpsar6" path="res://assets/sprites/pillars/Fart-house-pillar.png" id="23_gjhpd"]
 [ext_resource type="Texture2D" uid="uid://1udm2nimijgt" path="res://assets/sprites/Slime/dead/Dead01.png" id="25_frfg2"]
 [ext_resource type="Texture2D" uid="uid://cw4wib00aekdw" path="res://assets/sprites/Slime/dead/Dead02.png" id="26_675li"]
@@ -201,3 +203,27 @@ light_mask = 0
 position = Vector2(2107, 548)
 shape = SubResource("RectangleShape2D_nqcs4")
 debug_color = Color(1.44392e-06, 0.645726, 0.253689, 0.42)
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("13_pcdot")
+
+[node name="Label" type="Label" parent="Control"]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 1920.0
+offset_bottom = 1081.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_constants/shadow_outline_size = 10
+theme_override_fonts/font = ExtResource("14_1xyqq")
+theme_override_font_sizes/font_size = 44
+text = "Get ready for Butt Stuff
+PRESS SPACE TO BEGIN"
+horizontal_alignment = 1
+vertical_alignment = 1

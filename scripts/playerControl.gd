@@ -10,7 +10,11 @@ const BOUNDARY_RIGHT: float = 1920
 const BOUNDARY_TOP: float = 0
 const BOUNDARY_BOTTOM: float = 1080
 
-var score = 0
+var score = 0  # Initialize a score variable
+@onready var pointsLabel = $"../Can/Points"
+
+func _ready() -> void:
+	update_score(0)
 
 func _physics_process(delta: float) -> void:
 	# Handle movement using physics
@@ -43,6 +47,7 @@ func _physics_process(delta: float) -> void:
 
 	# Point collection
 	bean_point()
+	
 
 	# Clamp the position to stay within the boundaries
 	position.x = clamp(position.x, BOUNDARY_LEFT, BOUNDARY_RIGHT)
@@ -84,8 +89,22 @@ func play_shoot_animation() -> void:
 func bean_point():
 	var bean_collision = $beanCollect
 	var bean_overlap = bean_collision.get_overlapping_bodies()
+	var bean_sound = $beanCollect/beanSound
+	var bean_can = $"../Can"
 	
 	if bean_overlap.size() > 0:
 		for body in bean_overlap:
 			if body.name == "bean":
-				body.visible = false
+				if body.visible:  # Check if the bean is currently visible
+					body.visible = false
+					bean_sound.play()
+					bean_can.play("cashIn")
+					score += 1 * 10
+					print("Score updated to: ", score)  # Debug line to see score update
+					update_score(score)  # Call this to update the score label
+
+func update_score(score) -> void:
+	if pointsLabel:
+		pointsLabel.text = str(score)
+	else:
+		print("Points node not assigned or not found.")

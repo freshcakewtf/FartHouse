@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://2271v2x2b2hk"
+path="res://.godot/imported/Cyberwave Orchestra - Untold Treasures - Coins Drop Into A Tin Can.mp3-9901cf90156d7b2511494a752d559c77.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds /sfx/Cyberwave Orchestra - Untold Treasures - Coins Drop Into A Tin Can.mp3"
+dest_files=["res://.godot/imported/Cyberwave Orchestra - Untold Treasures - Coins Drop Into A Tin Can.mp3-9901cf90156d7b2511494a752d559c77.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
