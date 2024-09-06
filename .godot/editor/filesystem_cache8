@@ -1,77 +1,95 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1725415971
-icon.svg::CompressedTexture2D::2359236717667663535::1725406059::1725406078::1::::<><>::
-::res://assets/::1725411441
-::res://assets/font/::1725411468
-FreshCaked.otf::FontFile::5155308709464363455::1713994868::1725411468::1::::<><>::
-::res://assets/sounds /::1725406059
-::res://assets/sounds /music/::1725406078
-Ian Post - Breaking Point.mp3::AudioStreamMP3::8394757937983442045::1725406059::1725406078::1::::<><>::
-Peter Spacey - Moon Dance.mp3::AudioStreamMP3::1686700022470496556::1725406059::1725406078::1::::<><>::
-::res://assets/sounds /sfx/::1725409375
-Artlist Studios - Toony Tunes - Small Fart.mp3::AudioStreamMP3::8312028244737166494::1725406059::1725406078::1::::<><>::
-Artlist Studios - Toony Tunes - Smelly Fart.mp3::AudioStreamMP3::8788265902292056429::1725406059::1725406078::1::::<><>::
-Artlist Studios - Toony Tunes - Wet Fart.mp3::AudioStreamMP3::3031449379336497327::1725406059::1725406078::1::::<><>::
-Cyberwave Orchestra - Untold Treasures - Coins Drop Into A Tin Can.mp3::AudioStreamMP3::1952827497777781308::1725409364::1725409375::1::::<><>::
-::res://assets/sprites/::1725411956
-::res://assets/sprites/backgrounds/::1725406079
-Fart_House_BKG.png::CompressedTexture2D::6429718713020344037::1725406059::1725406078::1::::<><>::
-Fart_House_Brick_BKG.png::CompressedTexture2D::5194868990288726562::1725406059::1725406079::1::::<><>::
-Fart_House_PipeLRG_BKG.png::CompressedTexture2D::6991353246005894833::1725406059::1725406078::1::::<><>::
-Fart_House_PipeLRG_Shadown_BKG.png::CompressedTexture2D::7381464994088713591::1725406059::1725406078::1::::<><>::
-Fart_House_pipes_BKG.png::CompressedTexture2D::6114992595210458634::1725406059::1725406078::1::::<><>::
-Fart_House_sewerHoleBKG.png::CompressedTexture2D::6438621150014667558::1725406059::1725406078::1::::<><>::
-::res://assets/sprites/bean/::1725406078
-PNG_0001.png::CompressedTexture2D::6070265196554250482::1725406059::1725406078::1::::<><>::
-PNG_0002.png::CompressedTexture2D::5809971813536593280::1725406059::1725406078::1::::<><>::
-PNG_0003.png::CompressedTexture2D::5843342308890598098::1725406059::1725406078::1::::<><>::
-PNG_0004.png::CompressedTexture2D::3383590110602254527::1725406059::1725406078::1::::<><>::
-PNG_0005.png::CompressedTexture2D::4942264327165720031::1725406059::1725406078::1::::<><>::
-PNG_0006.png::CompressedTexture2D::2550975002686971437::1725406059::1725406078::1::::<><>::
-PNG_0007.png::CompressedTexture2D::8575689639078027899::1725406059::1725406078::1::::<><>::
-PNG_0008.png::CompressedTexture2D::3225440247181228343::1725406059::1725406078::1::::<><>::
-::res://assets/sprites/beanCan/::1725411997
-PNG_0001.png::CompressedTexture2D::128221089286126174::1725299320::1725411997::1::::<><>::
-PNG_0002.png::CompressedTexture2D::3248385201592947182::1725299320::1725411997::1::::<><>::
-PNG_0003.png::CompressedTexture2D::8408533118265124185::1725299320::1725411997::1::::<><>::
-PNG_0004.png::CompressedTexture2D::3832629596673120922::1725299320::1725411997::1::::<><>::
-PNG_0005.png::CompressedTexture2D::8831617338999900339::1725299320::1725411997::1::::<><>::
-PNG_0006.png::CompressedTexture2D::5243754659552175925::1725299320::1725411997::1::::<><>::
-PNG_0007.png::CompressedTexture2D::3447902327127032318::1725299320::1725411997::1::::<><>::
-PNG_0008.png::CompressedTexture2D::500864126435373526::1725299320::1725411997::1::::<><>::
-::res://assets/sprites/pillars/::1725406078
-Fart-house-pillar.png::CompressedTexture2D::1064907539569313089::1725406059::1725406078::1::::<><>::
-::res://assets/sprites/player/::1725406078
-Fart-house-character-sprite.png::CompressedTexture2D::8039612410205613253::1725406059::1725406078::1::::<><>::
-::res://assets/sprites/player/Fart/::1725406078
-Fart0.png::CompressedTexture2D::1337549717718124861::1725406059::1725406078::1::::<><>::
-Fart1.png::CompressedTexture2D::2180310628072564145::1725406059::1725406078::1::::<><>::
-Fart2.png::CompressedTexture2D::3755946545643512813::1725406059::1725406078::1::::<><>::
-Fart3.png::CompressedTexture2D::5801673482229351041::1725406059::1725406078::1::::<><>::
-Fart4.png::CompressedTexture2D::7732431948644983908::1725406059::1725406078::1::::<><>::
-::res://assets/sprites/player/Fart-house-character-sprite-shoot/::1725406078
-Fart-house-character-sprite-shoo2.png::CompressedTexture2D::9145444736411061356::1725406059::1725406078::1::::<><>::
-Fart-house-character-sprite-shoot1.png::CompressedTexture2D::9010219452485493508::1725406059::1725406078::1::::<><>::
-Fart-house-character-sprite-shoot3.png::CompressedTexture2D::4465574706038736352::1725406059::1725406078::1::::<><>::
-Fart-house-character-sprite-shoot4.png::CompressedTexture2D::5600795241871248409::1725406059::1725406078::1::::<><>::
-::res://assets/sprites/Slime/::1725406059
-::res://assets/sprites/Slime/dead/::1725406078
-Dead01.png::CompressedTexture2D::1866402508767951427::1725406059::1725406078::1::::<><>::
-Dead02.png::CompressedTexture2D::6378213034762264484::1725406059::1725406078::1::::<><>::
-Dead03.png::CompressedTexture2D::2488839588685206639::1725406059::1725406078::1::::<><>::
-::res://assets/sprites/Slime/PillarSlime/::1725406078
-PillarSlime1.png::CompressedTexture2D::4642778257295046934::1725406059::1725406078::1::::<><>::
-PillarSlime2.png::CompressedTexture2D::5196813704322447873::1725406059::1725406078::1::::<><>::
-PillarSlime3.png::CompressedTexture2D::3950704063443380267::1725406059::1725406078::1::::<><>::
-::res://scenes/::1725415945
-main.tscn::PackedScene::2004832571043446865::1725415857::0::1::::<><>::uid://cxuur7fbhma26::::res://assets/sprites/backgrounds/Fart_House_BKG.png<>uid://cgaoy6xida4fu::::res://assets/sprites/backgrounds/Fart_House_Brick_BKG.png<>uid://dmspihrqbrknl::::res://assets/sprites/player/Fart-house-character-sprite.png<>res://scripts/Brickmove.gd<>res://scripts/playerControl.gd<>uid://ctefbgbflwpxa::::res://assets/sprites/backgrounds/Fart_House_pipes_BKG.png<>uid://cxy6fc8x5qsr3::::res://assets/sprites/backgrounds/Fart_House_sewerHoleBKG.png<>uid://d3keeyjg7n8s3::::res://assets/sprites/player/Fart-house-character-sprite-shoot/Fart-house-character-sprite-shoo2.png<>uid://pf34vtbpsar6::::res://assets/sprites/pillars/Fart-house-pillar.png<>res://scripts/pillarmove.gd<>uid://d1mu86wld2y3e::::res://assets/sprites/player/Fart-house-character-sprite-shoot/Fart-house-character-sprite-shoot1.png<>res://scripts/pipeBKG.gd<>uid://b7e84518oqihi::::res://assets/sprites/Slime/PillarSlime/PillarSlime1.png<>uid://b4vfmlutanwng::::res://assets/sprites/player/Fart-house-character-sprite-shoot/Fart-house-character-sprite-shoot3.png<>uid://cl2cjq6pygr5j::::res://assets/sprites/player/Fart-house-character-sprite-shoot/Fart-house-character-sprite-shoot4.png<>uid://cgbm06ngkwqwf::::res://assets/sprites/Slime/PillarSlime/PillarSlime2.png<>uid://tb6ipgndr4k4::::res://assets/sprites/player/Fart/Fart0.png<>uid://bwj0rvv08gpj4::::res://assets/sprites/Slime/PillarSlime/PillarSlime3.png<>uid://6cfnrrhsc6v2::::res://assets/sprites/player/Fart/Fart1.png<>uid://btrn5j3hcg73f::::res://assets/sprites/player/Fart/Fart2.png<>uid://cowmykdkydfvl::::res://assets/sprites/player/Fart/Fart3.png<>uid://difwa3j3py6wm::::res://assets/sprites/player/Fart/Fart4.png<>res://scripts/fart.gd<>uid://bjgpr72lycbsx::::res://assets/sounds /sfx/Artlist Studios - Toony Tunes - Wet Fart.mp3<>uid://dxhdpqqghhb5f::::res://assets/sounds /sfx/Artlist Studios - Toony Tunes - Smelly Fart.mp3<>uid://dqon5j0sp647c::::res://assets/sounds /sfx/Artlist Studios - Toony Tunes - Small Fart.mp3<>uid://ybbx5umg6w1i::::res://assets/sounds /music/Peter Spacey - Moon Dance.mp3<>uid://1udm2nimijgt::::res://assets/sprites/Slime/dead/Dead01.png<>uid://cw4wib00aekdw::::res://assets/sprites/Slime/dead/Dead02.png<>uid://bbpu3bajtvwa6::::res://assets/sprites/Slime/dead/Dead03.png<>uid://csqqm7lkjyh5k::::res://assets/sprites/bean/PNG_0001.png<>res://scripts/bean.gd<>uid://2271v2x2b2hk::::res://assets/sounds /sfx/Cyberwave Orchestra - Untold Treasures - Coins Drop Into A Tin Can.mp3<>uid://co1nnfjtb14tg::::res://assets/sprites/bean/PNG_0002.png<>uid://cpis82gjsnite::::res://assets/sprites/bean/PNG_0003.png<>uid://bohbh8nrrbiix::::res://assets/sprites/bean/PNG_0004.png<>uid://ccocmvlj6rikt::::res://assets/sprites/bean/PNG_0005.png<>uid://bclygksrpw1s8::::res://assets/sprites/bean/PNG_0006.png<>uid://dugemc45fasgx::::res://assets/sprites/bean/PNG_0007.png<>uid://bl7osairo753h::::res://assets/sprites/bean/PNG_0008.png<>uid://b3d1uxugjhry::::res://assets/sprites/beanCan/PNG_0001.png<>uid://bmjsoux7pyyp7::::res://assets/sprites/beanCan/PNG_0002.png<>uid://dr2fkuvdym0wj::::res://assets/sprites/beanCan/PNG_0003.png<>uid://buus35a4pwbvm::::res://assets/sprites/beanCan/PNG_0004.png<>uid://dx3dphba2ywql::::res://assets/sprites/beanCan/PNG_0005.png<>uid://cgyd4xleula0l::::res://assets/sprites/beanCan/PNG_0006.png
-start.tscn::PackedScene::9218191171188452643::1725415945::0::1::::<><>::uid://druqo348sxbq8::::res://assets/sounds /music/Ian Post - Breaking Point.mp3<>uid://cxuur7fbhma26::::res://assets/sprites/backgrounds/Fart_House_BKG.png<>uid://cgaoy6xida4fu::::res://assets/sprites/backgrounds/Fart_House_Brick_BKG.png<>uid://cxy6fc8x5qsr3::::res://assets/sprites/backgrounds/Fart_House_sewerHoleBKG.png<>uid://ctefbgbflwpxa::::res://assets/sprites/backgrounds/Fart_House_pipes_BKG.png<>res://scripts/StartScreen.gd<>uid://cfpjgfrwatugl::::res://assets/font/FreshCaked.otf<>uid://pf34vtbpsar6::::res://assets/sprites/pillars/Fart-house-pillar.png<>uid://1udm2nimijgt::::res://assets/sprites/Slime/dead/Dead01.png<>uid://cw4wib00aekdw::::res://assets/sprites/Slime/dead/Dead02.png<>uid://bbpu3bajtvwa6::::res://assets/sprites/Slime/dead/Dead03.png<>uid://b7e84518oqihi::::res://assets/sprites/Slime/PillarSlime/PillarSlime1.png<>uid://cgbm06ngkwqwf::::res://assets/sprites/Slime/PillarSlime/PillarSlime2.png<>uid://bwj0rvv08gpj4::::res://assets/sprites/Slime/PillarSlime/PillarSlime3.png
-::res://scripts/::1725415081
-bean.gd::GDScript::-1::1725409231::0::1::::<>Node2D<>::
-Brickmove.gd::GDScript::-1::1725406059::0::1::::<>Node2D<>::
-fart.gd::GDScript::-1::1725406059::0::1::::<>AnimatedSprite2D<>::
-pillarmove.gd::GDScript::-1::1725406059::0::1::::<>Node2D<>::
-pipeBKG.gd::GDScript::-1::1725406059::0::1::::<>Node2D<>::
-playerControl.gd::GDScript::-1::1725415081::0::1::::<>CharacterBody2D<>::
-shoot_sound.gd::GDScript::-1::1725406059::0::1::::<>Node2D<>::
-StartScreen.gd::GDScript::-1::1725410955::0::1::::<>Control<>::
+::res://::1725580013
+icon.svg::CompressedTexture2D::2359236717667663535::1725569494::1725569651::1::::<><>::
+::res://assets/::1725569494
+::res://assets/font/::1725569993
+Arial Black.ttf::FontFile::7766290443146226197::1722767501::1725569989::1::::<><>::
+::res://assets/sounds /::1725569494
+::res://assets/sounds /music/::1725569651
+Ian Post - Breaking Point.mp3::AudioStreamMP3::8394757937983442045::1725569494::1725569651::1::::<><>::
+Peter Spacey - Moon Dance.mp3::AudioStreamMP3::1686700022470496556::1725569494::1725569651::1::::<><>::
+::res://assets/sounds /sfx/::1725570201
+Artlist Studios - Toony Tunes - Small Fart.mp3::AudioStreamMP3::8312028244737166494::1725569494::1725569651::1::::<><>::
+Artlist Studios - Toony Tunes - Smelly Fart.mp3::AudioStreamMP3::8788265902292056429::1725569494::1725569651::1::::<><>::
+Artlist Studios - Toony Tunes - Wet Fart.mp3::AudioStreamMP3::3031449379336497327::1725569494::1725569651::1::::<><>::
+Cyberwave Orchestra - Untold Treasures - Coins Drop Into A Tin Can.mp3::AudioStreamMP3::1952827497777781308::1725569494::1725569651::1::::<><>::
+HD Audio - Destruction - Gunshot Explosion Close.mp3::AudioStreamMP3::1561147696923101830::1725559941::1725570201::1::::<><>::
+::res://assets/sprites/::1725570167
+::res://assets/sprites/backgrounds/::1725579906
+Fart_House_BKG.png::CompressedTexture2D::6429718713020344037::1725569494::1725569651::1::::<><>::
+Fart_House_Brick_BKG.png::CompressedTexture2D::5194868990288726562::1725569494::1725569652::1::::<><>::
+Fart_House_PipeLRG_BKG.png::CompressedTexture2D::6991353246005894833::1725569494::1725569651::1::::<><>::
+Fart_House_PipeLRG_Shadown_BKG.png::CompressedTexture2D::7381464994088713591::1725569494::1725569651::1::::<><>::
+Fart_House_pipes_BKG.png::CompressedTexture2D::6114992595210458634::1725569494::1725569652::1::::<><>::
+Fart_House_sewerHoleBKG.png::CompressedTexture2D::6438621150014667558::1725569494::1725569652::1::::<><>::
+First_Game.png::CompressedTexture2D::1522610731872022933::1725579853::1725579906::1::::<><>::
+::res://assets/sprites/bean/::1725569651
+PNG_0001.png::CompressedTexture2D::6070265196554250482::1725569494::1725569651::1::::<><>::
+PNG_0002.png::CompressedTexture2D::5809971813536593280::1725569494::1725569651::1::::<><>::
+PNG_0003.png::CompressedTexture2D::5843342308890598098::1725569494::1725569651::1::::<><>::
+PNG_0004.png::CompressedTexture2D::3383590110602254527::1725569494::1725569651::1::::<><>::
+PNG_0005.png::CompressedTexture2D::4942264327165720031::1725569494::1725569651::1::::<><>::
+PNG_0006.png::CompressedTexture2D::2550975002686971437::1725569494::1725569651::1::::<><>::
+PNG_0007.png::CompressedTexture2D::8575689639078027899::1725569494::1725569651::1::::<><>::
+PNG_0008.png::CompressedTexture2D::3225440247181228343::1725569494::1725569651::1::::<><>::
+::res://assets/sprites/beanCan/::1725569651
+PNG_0001.png::CompressedTexture2D::128221089286126174::1725569494::1725569651::1::::<><>::
+PNG_0002.png::CompressedTexture2D::3248385201592947182::1725569494::1725569651::1::::<><>::
+PNG_0003.png::CompressedTexture2D::8408533118265124185::1725569494::1725569651::1::::<><>::
+PNG_0004.png::CompressedTexture2D::3832629596673120922::1725569494::1725569651::1::::<><>::
+PNG_0005.png::CompressedTexture2D::8831617338999900339::1725569494::1725569651::1::::<><>::
+PNG_0006.png::CompressedTexture2D::5243754659552175925::1725569494::1725569651::1::::<><>::
+PNG_0007.png::CompressedTexture2D::3447902327127032318::1725569494::1725569651::1::::<><>::
+PNG_0008.png::CompressedTexture2D::500864126435373526::1725569494::1725569651::1::::<><>::
+::res://assets/sprites/pillars/::1725569651
+Fart-house-pillar.png::CompressedTexture2D::1064907539569313089::1725569494::1725569651::1::::<><>::
+::res://assets/sprites/player/::1725570108
+Fart-house-character-sprite.png::CompressedTexture2D::8039612410205613253::1725569494::1725569651::1::::<><>::
+::res://assets/sprites/player/Ded/::1725570201
+PNG_0001.png::CompressedTexture2D::7933997763029681956::1725476570::1725570201::1::::<><>::
+PNG_0002.png::CompressedTexture2D::4099855885243276664::1725476570::1725570201::1::::<><>::
+PNG_0003.png::CompressedTexture2D::8941511336819125135::1725476570::1725570201::1::::<><>::
+PNG_0004.png::CompressedTexture2D::3857770618933396354::1725476570::1725570201::1::::<><>::
+PNG_0005.png::CompressedTexture2D::2523023757344587479::1725476570::1725570201::1::::<><>::
+::res://assets/sprites/player/Fart/::1725569651
+Fart0.png::CompressedTexture2D::1337549717718124861::1725569494::1725569651::1::::<><>::
+Fart1.png::CompressedTexture2D::2180310628072564145::1725569494::1725569651::1::::<><>::
+Fart2.png::CompressedTexture2D::3755946545643512813::1725569494::1725569651::1::::<><>::
+Fart3.png::CompressedTexture2D::5801673482229351041::1725569494::1725569651::1::::<><>::
+Fart4.png::CompressedTexture2D::7732431948644983908::1725569494::1725569651::1::::<><>::
+::res://assets/sprites/player/Fart-house-character-sprite-shoot/::1725569651
+Fart-house-character-sprite-shoo2.png::CompressedTexture2D::9145444736411061356::1725569494::1725569651::1::::<><>::
+Fart-house-character-sprite-shoot1.png::CompressedTexture2D::9010219452485493508::1725569494::1725569651::1::::<><>::
+Fart-house-character-sprite-shoot3.png::CompressedTexture2D::4465574706038736352::1725569494::1725569651::1::::<><>::
+Fart-house-character-sprite-shoot4.png::CompressedTexture2D::5600795241871248409::1725569494::1725569651::1::::<><>::
+::res://assets/sprites/player/Flame/::1725570201
+flame_01.png::CompressedTexture2D::3760393854134271813::1725476282::1725570201::1::::<><>::
+flame_02.png::CompressedTexture2D::7856859097891408449::1725476282::1725570201::1::::<><>::
+flame_03.png::CompressedTexture2D::2693558463494892470::1725476282::1725570201::1::::<><>::
+flame_04.png::CompressedTexture2D::2973393328186693145::1725476282::1725570201::1::::<><>::
+flame_05.png::CompressedTexture2D::7546122317518169651::1725476282::1725570201::1::::<><>::
+::res://assets/sprites/Slime/::1725569494
+::res://assets/sprites/Slime/dead/::1725569651
+Dead01.png::CompressedTexture2D::1866402508767951427::1725569494::1725569651::1::::<><>::
+Dead02.png::CompressedTexture2D::6378213034762264484::1725569494::1725569651::1::::<><>::
+Dead03.png::CompressedTexture2D::2488839588685206639::1725569494::1725569651::1::::<><>::
+::res://assets/sprites/Slime/PillarSlime/::1725569651
+PillarSlime1.png::CompressedTexture2D::4642778257295046934::1725569494::1725569651::1::::<><>::
+PillarSlime2.png::CompressedTexture2D::5196813704322447873::1725569494::1725569651::1::::<><>::
+PillarSlime3.png::CompressedTexture2D::3950704063443380267::1725569494::1725569651::1::::<><>::
+::res://assets/sprites/Start/::1725579908
+Start.png::CompressedTexture2D::2170520760702851938::1725570193::1725570201::1::::<><>::
+::res://scenes/::1725580013
+main.tscn::PackedScene::2004832571043446865::1725579747::0::1::::<><>::res://scripts/home.gd<>uid://cxuur7fbhma26::::res://assets/sprites/backgrounds/Fart_House_BKG.png<>uid://cgaoy6xida4fu::::res://assets/sprites/backgrounds/Fart_House_Brick_BKG.png<>uid://dmspihrqbrknl::::res://assets/sprites/player/Fart-house-character-sprite.png<>res://scripts/Brickmove.gd<>res://scripts/playerControl.gd<>uid://ctefbgbflwpxa::::res://assets/sprites/backgrounds/Fart_House_pipes_BKG.png<>uid://cxy6fc8x5qsr3::::res://assets/sprites/backgrounds/Fart_House_sewerHoleBKG.png<>uid://d3keeyjg7n8s3::::res://assets/sprites/player/Fart-house-character-sprite-shoot/Fart-house-character-sprite-shoo2.png<>uid://pf34vtbpsar6::::res://assets/sprites/pillars/Fart-house-pillar.png<>res://scripts/pillarmove.gd<>uid://d1mu86wld2y3e::::res://assets/sprites/player/Fart-house-character-sprite-shoot/Fart-house-character-sprite-shoot1.png<>res://scripts/pipeBKG.gd<>uid://b7e84518oqihi::::res://assets/sprites/Slime/PillarSlime/PillarSlime1.png<>uid://b4vfmlutanwng::::res://assets/sprites/player/Fart-house-character-sprite-shoot/Fart-house-character-sprite-shoot3.png<>uid://cl2cjq6pygr5j::::res://assets/sprites/player/Fart-house-character-sprite-shoot/Fart-house-character-sprite-shoot4.png<>uid://cgbm06ngkwqwf::::res://assets/sprites/Slime/PillarSlime/PillarSlime2.png<>uid://tb6ipgndr4k4::::res://assets/sprites/player/Fart/Fart0.png<>uid://bwj0rvv08gpj4::::res://assets/sprites/Slime/PillarSlime/PillarSlime3.png<>uid://6cfnrrhsc6v2::::res://assets/sprites/player/Fart/Fart1.png<>uid://btrn5j3hcg73f::::res://assets/sprites/player/Fart/Fart2.png<>uid://cowmykdkydfvl::::res://assets/sprites/player/Fart/Fart3.png<>uid://difwa3j3py6wm::::res://assets/sprites/player/Fart/Fart4.png<>res://scripts/fart.gd<>uid://bjgpr72lycbsx::::res://assets/sounds /sfx/Artlist Studios - Toony Tunes - Wet Fart.mp3<>uid://dxhdpqqghhb5f::::res://assets/sounds /sfx/Artlist Studios - Toony Tunes - Smelly Fart.mp3<>uid://dqon5j0sp647c::::res://assets/sounds /sfx/Artlist Studios - Toony Tunes - Small Fart.mp3<>uid://ybbx5umg6w1i::::res://assets/sounds /music/Peter Spacey - Moon Dance.mp3<>uid://1udm2nimijgt::::res://assets/sprites/Slime/dead/Dead01.png<>uid://cw4wib00aekdw::::res://assets/sprites/Slime/dead/Dead02.png<>uid://bbpu3bajtvwa6::::res://assets/sprites/Slime/dead/Dead03.png<>uid://csqqm7lkjyh5k::::res://assets/sprites/bean/PNG_0001.png<>res://scripts/bean.gd<>uid://btttew2qcep1v::::res://assets/sprites/player/Flame/flame_01.png<>uid://2271v2x2b2hk::::res://assets/sounds /sfx/Cyberwave Orchestra - Untold Treasures - Coins Drop Into A Tin Can.mp3<>uid://co1nnfjtb14tg::::res://assets/sprites/bean/PNG_0002.png<>uid://cpis82gjsnite::::res://assets/sprites/bean/PNG_0003.png<>uid://dj66k6t55v5fx::::res://assets/sprites/player/Flame/flame_02.png<>uid://bohbh8nrrbiix::::res://assets/sprites/bean/PNG_0004.png<>uid://bem1rqunyflys::::res://assets/sprites/player/Flame/flame_03.png<>uid://bimlma4ycwi4p::::res://assets/sprites/player/Flame/flame_04.png<>uid://ccocmvlj6rikt::::res://assets/sprites/bean/PNG_0005.png<>uid://bclygksrpw1s8::::res://assets/sprites/bean/PNG_0006.png<>uid://dfrnsdcmvmo3t::::res://assets/sprites/player/Flame/flame_05.png<>uid://dugemc45fasgx::::res://assets/sprites/bean/PNG_0007.png<>uid://bl7osairo753h::::res://assets/sprites/bean/PNG_0008.png<>uid://d0nlndpwcrdgp::::res://assets/sprites/player/Ded/PNG_0003.png<>uid://bu7y6h0n3qra5::::res://assets/sprites/player/Ded/PNG_0004.png<>uid://bb7f3ktclan08::::res://assets/sprites/player/Ded/PNG_0005.png<>uid://b3d1uxugjhry::::res://assets/sprites/beanCan/PNG_0001.png<>uid://bmjsoux7pyyp7::::res://assets/sprites/beanCan/PNG_0002.png<>uid://dr2fkuvdym0wj::::res://assets/sprites/beanCan/PNG_0003.png<>uid://buus35a4pwbvm::::res://assets/sprites/beanCan/PNG_0004.png<>uid://dx3dphba2ywql::::res://assets/sprites/beanCan/PNG_0005.png<>uid://cgyd4xleula0l::::res://assets/sprites/beanCan/PNG_0006.png<>uid://diwbw0juogysb::::res://assets/font/Arial Black.ttf<>uid://wih4y5vq6va1::::res://assets/sounds /sfx/HD Audio - Destruction - Gunshot Explosion Close.mp3
+start.tscn::PackedScene::9218191171188452643::1725579747::0::1::::<><>::uid://druqo348sxbq8::::res://assets/sounds /music/Ian Post - Breaking Point.mp3<>uid://cxuur7fbhma26::::res://assets/sprites/backgrounds/Fart_House_BKG.png<>uid://cgaoy6xida4fu::::res://assets/sprites/backgrounds/Fart_House_Brick_BKG.png<>uid://cxy6fc8x5qsr3::::res://assets/sprites/backgrounds/Fart_House_sewerHoleBKG.png<>uid://ctefbgbflwpxa::::res://assets/sprites/backgrounds/Fart_House_pipes_BKG.png<>res://scripts/StartScreen.gd<>uid://diwbw0juogysb::::res://assets/font/Arial Black.ttf<>uid://56ofo0ifpeva::::res://assets/sprites/Start/Start.png<>uid://csqqm7lkjyh5k::::res://assets/sprites/bean/PNG_0001.png<>uid://co1nnfjtb14tg::::res://assets/sprites/bean/PNG_0002.png<>uid://cpis82gjsnite::::res://assets/sprites/bean/PNG_0003.png<>uid://bohbh8nrrbiix::::res://assets/sprites/bean/PNG_0004.png<>uid://ccocmvlj6rikt::::res://assets/sprites/bean/PNG_0005.png<>uid://bclygksrpw1s8::::res://assets/sprites/bean/PNG_0006.png<>uid://dugemc45fasgx::::res://assets/sprites/bean/PNG_0007.png<>uid://bl7osairo753h::::res://assets/sprites/bean/PNG_0008.png<>uid://pf34vtbpsar6::::res://assets/sprites/pillars/Fart-house-pillar.png<>uid://1udm2nimijgt::::res://assets/sprites/Slime/dead/Dead01.png<>uid://cw4wib00aekdw::::res://assets/sprites/Slime/dead/Dead02.png<>uid://bbpu3bajtvwa6::::res://assets/sprites/Slime/dead/Dead03.png<>uid://b7e84518oqihi::::res://assets/sprites/Slime/PillarSlime/PillarSlime1.png<>uid://cgbm06ngkwqwf::::res://assets/sprites/Slime/PillarSlime/PillarSlime2.png<>uid://bwj0rvv08gpj4::::res://assets/sprites/Slime/PillarSlime/PillarSlime3.png
+text.gd::GDScript::-1::1725579982::0::1::::<>Sprite2D<>::
+::res://scripts/::1725579675
+bean.gd::GDScript::-1::1725570593::0::1::::<>Node2D<>::
+Brickmove.gd::GDScript::-1::1725569772::0::1::::<>Node2D<>::
+fart.gd::GDScript::-1::1725569772::0::1::::<>AnimatedSprite2D<>::
+home.gd::GDScript::-1::1725576221::0::1::::<>Control<>::
+pillarMove.gd::GDScript::-1::1725569772::0::1::::<>Node2D<>::
+pipeBKG.gd::GDScript::-1::1725569494::0::1::::<>Node2D<>::
+playerControl.gd::GDScript::-1::1725579675::0::1::::<>CharacterBody2D<>::
+shoot_sound.gd::GDScript::-1::1725569494::0::1::::<>Node2D<>::
+StartScreen.gd::GDScript::-1::1725571422::0::1::::<>Control<>::

@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://cfpjgfrwatugl"
-path="res://.godot/imported/FreshCaked.otf-bf4b9d5a8e1c68831033b47880f17d54.fontdata"
+uid="uid://diwbw0juogysb"
+path="res://.godot/imported/Arial Black.ttf-29ccd2b5f8425f663f905cee4315009b.fontdata"
 
 [deps]
 
-source_file="res://assets/font/FreshCaked.otf"
-dest_files=["res://.godot/imported/FreshCaked.otf-bf4b9d5a8e1c68831033b47880f17d54.fontdata"]
+source_file="res://assets/font/Arial Black.ttf"
+dest_files=["res://.godot/imported/Arial Black.ttf-29ccd2b5f8425f663f905cee4315009b.fontdata"]
 
 [params]
 

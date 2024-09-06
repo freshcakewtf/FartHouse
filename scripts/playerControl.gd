@@ -5,7 +5,8 @@ extends CharacterBody2D
 @export var rotation_speed: float = 2.0  # Speed at which the character rotates up/down
 @export var easing_speed: float = 12.0  # Speed at which the character rotates back to zero
 
-const BOUNDARY_LEFT: float = 0
+var BOUNDARY_LEFT: float = 0
+
 const BOUNDARY_RIGHT: float = 1920
 const BOUNDARY_TOP: float = 0
 const BOUNDARY_BOTTOM: float = 1080
@@ -43,7 +44,7 @@ func _physics_process(delta: float) -> void:
 	velocity = input_vector * speed
 
 	# Move the player based on the velocity and detect collisions
-	move_and_slide()  # Handles movement and collision
+	game_over()  # Handles movement and collision
 
 	# Point collection
 	bean_point()
@@ -108,3 +109,27 @@ func update_score(score) -> void:
 		pointsLabel.text = str(score)
 	else:
 		print("Points node not assigned or not found.")
+		
+func game_over():
+	var player = $Player
+	var death = $AnimatedSprite2D
+	# Use move_and_collide() instead of move_and_slide()
+	var collision = move_and_collide(velocity * get_physics_process_delta_time())
+
+	if collision:  # Check if a collision happened
+		$PlayershotDetect.collision_layer = 32
+		$PlayershotDetect.collision_mask = 32
+		$beanCollect.collision_layer = 32
+		$beanCollect.collision_mask = 32
+		player.visible = false
+		$"../Control/Label".visible = true
+		speed = 0
+		BOUNDARY_LEFT = -1000
+		death.visible = true
+	
+	else:
+		player.visible = true
+		speed = 800
+		$"../Explode".play()
+		death.visible = false
+		$"../Control/Label".visible = false

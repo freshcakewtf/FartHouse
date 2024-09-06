@@ -1,5 +1,6 @@
-[gd_scene load_steps=61 format=3 uid="uid://3tfkgi66bt6p"]
+[gd_scene load_steps=77 format=3 uid="uid://3tfkgi66bt6p"]
 
+[ext_resource type="Script" path="res://scripts/home.gd" id="1_a7oc0"]
 [ext_resource type="Texture2D" uid="uid://cxuur7fbhma26" path="res://assets/sprites/backgrounds/Fart_House_BKG.png" id="1_xw020"]
 [ext_resource type="Texture2D" uid="uid://cgaoy6xida4fu" path="res://assets/sprites/backgrounds/Fart_House_Brick_BKG.png" id="2_dj6wu"]
 [ext_resource type="Texture2D" uid="uid://dmspihrqbrknl" path="res://assets/sprites/player/Fart-house-character-sprite.png" id="2_uad3p"]
@@ -32,20 +33,32 @@
 [ext_resource type="Texture2D" uid="uid://bbpu3bajtvwa6" path="res://assets/sprites/Slime/dead/Dead03.png" id="27_j7gum"]
 [ext_resource type="Texture2D" uid="uid://csqqm7lkjyh5k" path="res://assets/sprites/bean/PNG_0001.png" id="31_h3n4h"]
 [ext_resource type="Script" path="res://scripts/bean.gd" id="31_wpenn"]
+[ext_resource type="Texture2D" uid="uid://btttew2qcep1v" path="res://assets/sprites/player/Flame/flame_01.png" id="32_3cv1g"]
 [ext_resource type="AudioStream" uid="uid://2271v2x2b2hk" path="res://assets/sounds /sfx/Cyberwave Orchestra - Untold Treasures - Coins Drop Into A Tin Can.mp3" id="32_6ne7m"]
 [ext_resource type="Texture2D" uid="uid://co1nnfjtb14tg" path="res://assets/sprites/bean/PNG_0002.png" id="32_ls0fi"]
 [ext_resource type="Texture2D" uid="uid://cpis82gjsnite" path="res://assets/sprites/bean/PNG_0003.png" id="33_331fq"]
+[ext_resource type="Texture2D" uid="uid://dj66k6t55v5fx" path="res://assets/sprites/player/Flame/flame_02.png" id="33_med1k"]
 [ext_resource type="Texture2D" uid="uid://bohbh8nrrbiix" path="res://assets/sprites/bean/PNG_0004.png" id="34_rjqa5"]
+[ext_resource type="Texture2D" uid="uid://bem1rqunyflys" path="res://assets/sprites/player/Flame/flame_03.png" id="34_sysca"]
+[ext_resource type="Texture2D" uid="uid://bimlma4ycwi4p" path="res://assets/sprites/player/Flame/flame_04.png" id="35_8jt6c"]
 [ext_resource type="Texture2D" uid="uid://ccocmvlj6rikt" path="res://assets/sprites/bean/PNG_0005.png" id="35_dhpo7"]
 [ext_resource type="Texture2D" uid="uid://bclygksrpw1s8" path="res://assets/sprites/bean/PNG_0006.png" id="36_maes6"]
+[ext_resource type="Texture2D" uid="uid://dfrnsdcmvmo3t" path="res://assets/sprites/player/Flame/flame_05.png" id="36_ykcfc"]
 [ext_resource type="Texture2D" uid="uid://dugemc45fasgx" path="res://assets/sprites/bean/PNG_0007.png" id="37_xbg35"]
 [ext_resource type="Texture2D" uid="uid://bl7osairo753h" path="res://assets/sprites/bean/PNG_0008.png" id="38_b28f4"]
+[ext_resource type="Texture2D" uid="uid://d0nlndpwcrdgp" path="res://assets/sprites/player/Ded/PNG_0003.png" id="38_ocyb8"]
+[ext_resource type="Texture2D" uid="uid://bu7y6h0n3qra5" path="res://assets/sprites/player/Ded/PNG_0004.png" id="39_kyglp"]
+[ext_resource type="Texture2D" uid="uid://bb7f3ktclan08" path="res://assets/sprites/player/Ded/PNG_0005.png" id="40_qgmxo"]
 [ext_resource type="Texture2D" uid="uid://b3d1uxugjhry" path="res://assets/sprites/beanCan/PNG_0001.png" id="41_07ejh"]
 [ext_resource type="Texture2D" uid="uid://bmjsoux7pyyp7" path="res://assets/sprites/beanCan/PNG_0002.png" id="42_bwogw"]
 [ext_resource type="Texture2D" uid="uid://dr2fkuvdym0wj" path="res://assets/sprites/beanCan/PNG_0003.png" id="43_y8y7j"]
 [ext_resource type="Texture2D" uid="uid://buus35a4pwbvm" path="res://assets/sprites/beanCan/PNG_0004.png" id="44_pium8"]
 [ext_resource type="Texture2D" uid="uid://dx3dphba2ywql" path="res://assets/sprites/beanCan/PNG_0005.png" id="45_q3scu"]
 [ext_resource type="Texture2D" uid="uid://cgyd4xleula0l" path="res://assets/sprites/beanCan/PNG_0006.png" id="46_eacdi"]
+[ext_resource type="FontFile" uid="uid://diwbw0juogysb" path="res://assets/font/Arial Black.ttf" id="47_vhrvv"]
+[ext_resource type="AudioStream" uid="uid://wih4y5vq6va1" path="res://assets/sounds /sfx/HD Audio - Destruction - Gunshot Explosion Close.mp3" id="56_grqi1"]
+[ext_resource type="Texture2D" uid="uid://vxtf82g8w1k0" path="res://assets/sprites/backgrounds/First_Game.png" id="58_tjppy"]
+[ext_resource type="Script" path="res://scripts/text.gd" id="59_ghlg3"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_m53el"]
 animations = [{
@@ -83,8 +96,9 @@ animations = [{
 radius = 21.0
 height = 106.0
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_vqfuq"]
-radius = 278.115
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_plsfk"]
+radius = 48.0
+height = 222.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4jib6"]
 radius = 64.1249
@@ -163,6 +177,29 @@ stream_0/stream = ExtResource("20_q0xmq")
 stream_1/stream = ExtResource("21_a21m7")
 stream_2/stream = ExtResource("22_w8ru6")
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_fku0c"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("32_3cv1g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_med1k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_sysca")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_8jt6c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_ykcfc")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
 [sub_resource type="Gradient" id="Gradient_o2703"]
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_0s1gu"]
@@ -174,8 +211,28 @@ fill_to = Vector2(0.541284, 0.573394)
 [sub_resource type="CircleShape2D" id="CircleShape2D_6rnpl"]
 radius = 50.04
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_lhi4d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("38_ocyb8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_kyglp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_qgmxo")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rjsgp"]
-size = Vector2(103, 984.5)
+size = Vector2(77.9766, 986.09)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_02tql"]
 animations = [{
@@ -248,9 +305,12 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pfww8"]
+size = Vector2(1140.94, 8.25)
+
 [node name="Node2D" type="Node2D"]
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("24_qtcs8")
 volume_db = -1.0
 autoplay = true
@@ -266,6 +326,11 @@ position = Vector2(960, 540)
 scale = Vector2(1, 1.027)
 texture = ExtResource("2_dj6wu")
 script = ExtResource("3_dhkk4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(4500, 540)
+texture = ExtResource("58_tjppy")
+script = ExtResource("59_ghlg3")
 
 [node name="BackgroundSewer" type="Sprite2D" parent="."]
 position = Vector2(960, 540)
@@ -285,7 +350,8 @@ texture = ExtResource("4_5li5t")
 script = ExtResource("5_kyxkh")
 
 [node name="bean" type="StaticBody2D" parent="."]
-position = Vector2(3500, 540)
+position = Vector2(4000, 540)
+scale = Vector2(0.75, 0.75)
 collision_layer = 65536
 collision_mask = 1048576
 script = ExtResource("31_wpenn")
@@ -299,7 +365,7 @@ shape = SubResource("CapsuleShape2D_s3hla")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 position = Vector2(960, 540)
-collision_mask = 262
+collision_mask = 270
 script = ExtResource("3_dndqv")
 
 [node name="PlayershotDetect" type="Area2D" parent="CharacterBody2D"]
@@ -307,7 +373,9 @@ collision_layer = 16
 collision_mask = 256
 
 [node name="shotcollision" type="CollisionShape2D" parent="CharacterBody2D/PlayershotDetect"]
-shape = SubResource("CircleShape2D_vqfuq")
+position = Vector2(200, 0)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_plsfk")
 debug_color = Color(0.804701, 0.615494, 0, 0.42)
 
 [node name="Collision_Player" type="CollisionShape2D" parent="CharacterBody2D"]
@@ -329,6 +397,12 @@ position = Vector2(-1059, -546)
 stream = SubResource("AudioStreamRandomizer_f0feh")
 volume_db = 5.0
 
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="CharacterBody2D/Player"]
+position = Vector2(-140, 9)
+scale = Vector2(0.75, 0.75)
+sprite_frames = SubResource("SpriteFrames_fku0c")
+autoplay = "default"
+
 [node name="PointLight2D" type="PointLight2D" parent="CharacterBody2D"]
 position = Vector2(-36, -83)
 scale = Vector2(114.111, 114.185)
@@ -349,106 +423,110 @@ stream = ExtResource("32_6ne7m")
 [node name="Collect" type="CollisionShape2D" parent="CharacterBody2D/beanCollect"]
 shape = SubResource("CircleShape2D_6rnpl")
 
-[node name="Pillar1" type="Sprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+sprite_frames = SubResource("SpriteFrames_lhi4d")
+autoplay = "default"
+
+[node name="Pillar_01" type="Sprite2D" parent="."]
 position = Vector2(2000, 540)
 texture = ExtResource("4_y33x4")
 script = ExtResource("5_3s88n")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Pillar1"]
+[node name="StaticBody2D" type="StaticBody2D" parent="Pillar_01"]
 collision_layer = 2
 
-[node name="Collision_Pillar_Bottom" type="CollisionShape2D" parent="Pillar1/StaticBody2D"]
-position = Vector2(13, 586)
+[node name="Collision_Pillar_Bottom" type="CollisionShape2D" parent="Pillar_01/StaticBody2D"]
+position = Vector2(5.25, 584.125)
 shape = SubResource("RectangleShape2D_rjsgp")
 
-[node name="Collision_Pillar_Top" type="CollisionShape2D" parent="Pillar1/StaticBody2D"]
-position = Vector2(8.5, -586.25)
+[node name="Collision_Pillar_Top" type="CollisionShape2D" parent="Pillar_01/StaticBody2D"]
+position = Vector2(7.83594, -586.371)
 shape = SubResource("RectangleShape2D_rjsgp")
 
-[node name="slime" type="StaticBody2D" parent="Pillar1"]
+[node name="slime" type="StaticBody2D" parent="Pillar_01"]
 show_behind_parent = true
 position = Vector2(-2100, -540)
 collision_layer = 256
 collision_mask = 17
 
-[node name="slimeanimation" type="AnimatedSprite2D" parent="Pillar1/slime"]
+[node name="slimeanimation" type="AnimatedSprite2D" parent="Pillar_01/slime"]
 show_behind_parent = true
 position = Vector2(2100, 540)
 sprite_frames = SubResource("SpriteFrames_02tql")
 animation = &"dead"
 autoplay = "default"
 
-[node name="slimecollision" type="CollisionShape2D" parent="Pillar1/slime"]
+[node name="slimecollision" type="CollisionShape2D" parent="Pillar_01/slime"]
 light_mask = 0
 position = Vector2(2107, 548)
 shape = SubResource("RectangleShape2D_nqcs4")
 debug_color = Color(1.44392e-06, 0.645726, 0.253689, 0.42)
 
-[node name="Pillar2" type="Sprite2D" parent="."]
+[node name="Pillar_02" type="Sprite2D" parent="."]
 position = Vector2(3000, 540)
 texture = ExtResource("4_y33x4")
 script = ExtResource("5_3s88n")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Pillar2"]
+[node name="StaticBody2D" type="StaticBody2D" parent="Pillar_02"]
 collision_layer = 2
 
-[node name="Collision_Pillar_Bottom" type="CollisionShape2D" parent="Pillar2/StaticBody2D"]
-position = Vector2(13, 586)
+[node name="Collision_Pillar_Bottom" type="CollisionShape2D" parent="Pillar_02/StaticBody2D"]
+position = Vector2(9.09375, 585.859)
 shape = SubResource("RectangleShape2D_rjsgp")
 
-[node name="Collision_Pillar_Top" type="CollisionShape2D" parent="Pillar2/StaticBody2D"]
-position = Vector2(8.5, -586.25)
+[node name="Collision_Pillar_Top" type="CollisionShape2D" parent="Pillar_02/StaticBody2D"]
+position = Vector2(7.01172, -586.045)
 shape = SubResource("RectangleShape2D_rjsgp")
 
-[node name="slime" type="StaticBody2D" parent="Pillar2"]
+[node name="slime" type="StaticBody2D" parent="Pillar_02"]
 show_behind_parent = true
 position = Vector2(-2100, -540)
 collision_layer = 256
 collision_mask = 17
 
-[node name="slimeanimation" type="AnimatedSprite2D" parent="Pillar2/slime"]
+[node name="slimeanimation" type="AnimatedSprite2D" parent="Pillar_02/slime"]
 show_behind_parent = true
 position = Vector2(2100, 540)
 sprite_frames = SubResource("SpriteFrames_02tql")
 animation = &"dead"
 autoplay = "default"
 
-[node name="slimecollision" type="CollisionShape2D" parent="Pillar2/slime"]
+[node name="slimecollision" type="CollisionShape2D" parent="Pillar_02/slime"]
 light_mask = 0
 position = Vector2(2107, 548)
 shape = SubResource("RectangleShape2D_nqcs4")
 debug_color = Color(1.44392e-06, 0.645726, 0.253689, 0.42)
 
-[node name="Pillar3" type="Sprite2D" parent="."]
+[node name="Pillar_03" type="Sprite2D" parent="."]
 position = Vector2(4000, 540)
 texture = ExtResource("4_y33x4")
 script = ExtResource("5_3s88n")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="Pillar3"]
+[node name="StaticBody2D" type="StaticBody2D" parent="Pillar_03"]
 collision_layer = 2
 
-[node name="Collision_Pillar_Bottom" type="CollisionShape2D" parent="Pillar3/StaticBody2D"]
+[node name="Collision_Pillar_Bottom" type="CollisionShape2D" parent="Pillar_03/StaticBody2D"]
 position = Vector2(13, 586)
 shape = SubResource("RectangleShape2D_rjsgp")
 
-[node name="Collision_Pillar_Top" type="CollisionShape2D" parent="Pillar3/StaticBody2D"]
-position = Vector2(8.5, -586.25)
+[node name="Collision_Pillar_Top" type="CollisionShape2D" parent="Pillar_03/StaticBody2D"]
+position = Vector2(9.79688, -587.555)
 shape = SubResource("RectangleShape2D_rjsgp")
 
-[node name="slime" type="StaticBody2D" parent="Pillar3"]
+[node name="slime" type="StaticBody2D" parent="Pillar_03"]
 show_behind_parent = true
 position = Vector2(-2100, -540)
 collision_layer = 256
 collision_mask = 17
 
-[node name="slimeanimation" type="AnimatedSprite2D" parent="Pillar3/slime"]
+[node name="slimeanimation" type="AnimatedSprite2D" parent="Pillar_03/slime"]
 show_behind_parent = true
 position = Vector2(2100, 540)
 sprite_frames = SubResource("SpriteFrames_02tql")
 animation = &"dead"
 autoplay = "default"
 
-[node name="slimecollision" type="CollisionShape2D" parent="Pillar3/slime"]
+[node name="slimecollision" type="CollisionShape2D" parent="Pillar_03/slime"]
 light_mask = 0
 position = Vector2(2107, 548)
 shape = SubResource("RectangleShape2D_nqcs4")
@@ -471,7 +549,63 @@ offset_left = -769.888
 offset_top = -96.328
 offset_right = 96.112
 offset_bottom = 19.672
+theme_override_fonts/font = ExtResource("47_vhrvv")
 theme_override_font_sizes/font_size = 85
 text = "Hello"
 horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2(-10, 540)
+collision_layer = 268435464
+collision_mask = 2147483649
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(-4.875, 5.53125)
+rotation = -1.5708
+shape = SubResource("RectangleShape2D_pfww8")
+one_way_collision = true
+one_way_collision_margin = 2.0
+
+[node name="Explode" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("56_grqi1")
+autoplay = true
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_a7oc0")
+
+[node name="Label" type="Label" parent="Control"]
+light_mask = 0
+layout_mode = 0
+offset_right = 1919.0
+offset_bottom = 1082.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_constants/shadow_outline_size = 10
+theme_override_fonts/font = ExtResource("47_vhrvv")
+theme_override_font_sizes/font_size = 100
+text = "CONGRATULATIONS!
+YOU DIED"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="Control"]
+light_mask = 0
+layout_mode = 0
+offset_top = 965.0
+offset_right = 515.0
+offset_bottom = 1052.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_constants/shadow_outline_size = 10
+theme_override_fonts/font = ExtResource("47_vhrvv")
+theme_override_font_sizes/font_size = 30
+text = "PRESS ESC. TO RESTART"
+horizontal_alignment = 1
 vertical_alignment = 1

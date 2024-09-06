@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://d4lmi5vt6067p"]
+[gd_scene load_steps=30 format=3 uid="uid://d4lmi5vt6067p"]
 
 [ext_resource type="AudioStream" uid="uid://druqo348sxbq8" path="res://assets/sounds /music/Ian Post - Breaking Point.mp3" id="1_i8ily"]
 [ext_resource type="Texture2D" uid="uid://cxuur7fbhma26" path="res://assets/sprites/backgrounds/Fart_House_BKG.png" id="2_h85d4"]
@@ -6,7 +6,16 @@
 [ext_resource type="Texture2D" uid="uid://cxy6fc8x5qsr3" path="res://assets/sprites/backgrounds/Fart_House_sewerHoleBKG.png" id="5_j5yvn"]
 [ext_resource type="Texture2D" uid="uid://ctefbgbflwpxa" path="res://assets/sprites/backgrounds/Fart_House_pipes_BKG.png" id="6_bfuti"]
 [ext_resource type="Script" path="res://scripts/StartScreen.gd" id="13_pcdot"]
-[ext_resource type="FontFile" uid="uid://cfpjgfrwatugl" path="res://assets/font/FreshCaked.otf" id="14_1xyqq"]
+[ext_resource type="FontFile" uid="uid://diwbw0juogysb" path="res://assets/font/Arial Black.ttf" id="14_iehi7"]
+[ext_resource type="Texture2D" uid="uid://56ofo0ifpeva" path="res://assets/sprites/Start/Start.png" id="15_uq5yv"]
+[ext_resource type="Texture2D" uid="uid://csqqm7lkjyh5k" path="res://assets/sprites/bean/PNG_0001.png" id="15_xclcc"]
+[ext_resource type="Texture2D" uid="uid://co1nnfjtb14tg" path="res://assets/sprites/bean/PNG_0002.png" id="16_e43v1"]
+[ext_resource type="Texture2D" uid="uid://cpis82gjsnite" path="res://assets/sprites/bean/PNG_0003.png" id="17_dtf70"]
+[ext_resource type="Texture2D" uid="uid://bohbh8nrrbiix" path="res://assets/sprites/bean/PNG_0004.png" id="18_edr5n"]
+[ext_resource type="Texture2D" uid="uid://ccocmvlj6rikt" path="res://assets/sprites/bean/PNG_0005.png" id="19_mqp0n"]
+[ext_resource type="Texture2D" uid="uid://bclygksrpw1s8" path="res://assets/sprites/bean/PNG_0006.png" id="20_n35hr"]
+[ext_resource type="Texture2D" uid="uid://dugemc45fasgx" path="res://assets/sprites/bean/PNG_0007.png" id="21_ikmvu"]
+[ext_resource type="Texture2D" uid="uid://bl7osairo753h" path="res://assets/sprites/bean/PNG_0008.png" id="22_6tlm8"]
 [ext_resource type="Texture2D" uid="uid://pf34vtbpsar6" path="res://assets/sprites/pillars/Fart-house-pillar.png" id="23_gjhpd"]
 [ext_resource type="Texture2D" uid="uid://1udm2nimijgt" path="res://assets/sprites/Slime/dead/Dead01.png" id="25_frfg2"]
 [ext_resource type="Texture2D" uid="uid://cw4wib00aekdw" path="res://assets/sprites/Slime/dead/Dead02.png" id="26_675li"]
@@ -62,6 +71,38 @@ animations = [{
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nqcs4"]
 size = Vector2(108, 202)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xo6pe"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_xclcc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_e43v1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_dtf70")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_edr5n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_mqp0n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_n35hr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_ikmvu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_6tlm8")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
 
 [node name="Node2D" type="Node2D"]
 
@@ -212,18 +253,59 @@ offset_bottom = 40.0
 script = ExtResource("13_pcdot")
 
 [node name="Label" type="Label" parent="Control"]
+light_mask = 0
 layout_mode = 0
 offset_top = 1.0
 offset_right = 1920.0
-offset_bottom = 1081.0
+offset_bottom = 773.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 20
 theme_override_constants/shadow_outline_size = 10
-theme_override_fonts/font = ExtResource("14_1xyqq")
-theme_override_font_sizes/font_size = 44
-text = "Get ready for Butt Stuff
-PRESS SPACE TO BEGIN"
+theme_override_fonts/font = ExtResource("14_iehi7")
+theme_override_font_sizes/font_size = 75
+text = "YOU'RE AN ASS"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="Control"]
+light_mask = 0
+layout_mode = 0
+offset_top = 604.0
+offset_right = 1920.0
+offset_bottom = 773.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 20
+theme_override_constants/shadow_outline_size = 10
+theme_override_fonts/font = ExtResource("14_iehi7")
+theme_override_font_sizes/font_size = 40
+text = "Arrow Keys Move | Space Bar Farts"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Bean" type="AnimatedSprite2D" parent="."]
+position = Vector2(1536, 809)
+scale = Vector2(0.75, 0.75)
+sprite_frames = SubResource("SpriteFrames_xo6pe")
+
+[node name="Bean2" type="AnimatedSprite2D" parent="."]
+position = Vector2(260, 180)
+scale = Vector2(0.75, 0.75)
+sprite_frames = SubResource("SpriteFrames_xo6pe")
+
+[node name="Bean3" type="AnimatedSprite2D" parent="."]
+position = Vector2(544, 824)
+scale = Vector2(0.75, 0.75)
+sprite_frames = SubResource("SpriteFrames_xo6pe")
+
+[node name="Bean4" type="AnimatedSprite2D" parent="."]
+position = Vector2(1639, 170)
+scale = Vector2(0.75, 0.75)
+sprite_frames = SubResource("SpriteFrames_xo6pe")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("15_uq5yv")

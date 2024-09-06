@@ -1,2 +1,10 @@
 res://scenes/main.tscn
+res://scripts/bean.gd
 res://scenes/start.tscn
+res://scenes/Tutorial.tscn
+res://scripts/StartScreen.gd
+res://scripts/Tutscreen.gd
+res://scripts/playerControl.gd
+res://scenes/home.gd
+res://scenes/label.gd
+res://scripts/text.gd
