@@ -117,6 +117,9 @@ func game_over():
 	var collision = move_and_collide(velocity * get_physics_process_delta_time())
 
 	if collision:  # Check if a collision happened
+		$"../Pillar_01/invisible_wall".collision_layer = 2
+		$"../Pillar_02/invisible_wall2".collision_layer = 2
+		$"../Pillar_03/invisible_wall3".collision_layer = 2
 		$PlayershotDetect.collision_layer = 32
 		$PlayershotDetect.collision_mask = 32
 		$beanCollect.collision_layer = 32

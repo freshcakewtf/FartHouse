@@ -274,7 +274,7 @@ light_mask = 0
 layout_mode = 0
 offset_top = 604.0
 offset_right = 1920.0
-offset_bottom = 773.0
+offset_bottom = 849.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -282,7 +282,8 @@ theme_override_constants/outline_size = 20
 theme_override_constants/shadow_outline_size = 10
 theme_override_fonts/font = ExtResource("14_iehi7")
 theme_override_font_sizes/font_size = 40
-text = "Arrow Keys Move | Space Bar Farts"
+text = "Arrow Keys Move | Space Bar Farts
+Bean are for points"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -290,21 +291,25 @@ vertical_alignment = 1
 position = Vector2(1536, 809)
 scale = Vector2(0.75, 0.75)
 sprite_frames = SubResource("SpriteFrames_xo6pe")
+autoplay = "default"
 
 [node name="Bean2" type="AnimatedSprite2D" parent="."]
 position = Vector2(260, 180)
 scale = Vector2(0.75, 0.75)
 sprite_frames = SubResource("SpriteFrames_xo6pe")
+autoplay = "default"
 
 [node name="Bean3" type="AnimatedSprite2D" parent="."]
 position = Vector2(544, 824)
 scale = Vector2(0.75, 0.75)
 sprite_frames = SubResource("SpriteFrames_xo6pe")
+autoplay = "default"
 
 [node name="Bean4" type="AnimatedSprite2D" parent="."]
 position = Vector2(1639, 170)
 scale = Vector2(0.75, 0.75)
 sprite_frames = SubResource("SpriteFrames_xo6pe")
+autoplay = "default"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(960, 540)

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://byecudr3lcc64"
+path="res://.godot/imported/Effectsworks - Cinematic Routines - Dirty Verbal Impact.mp3-e85db7c39dec9fc7d23ba675ea6a8c74.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds /music/Effectsworks - Cinematic Routines - Dirty Verbal Impact.mp3"
+dest_files=["res://.godot/imported/Effectsworks - Cinematic Routines - Dirty Verbal Impact.mp3-e85db7c39dec9fc7d23ba675ea6a8c74.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

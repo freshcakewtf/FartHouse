@@ -4,7 +4,9 @@ extends Control
 var main_scene = preload("res://scenes/start.tscn")  # Replace with the actual path to your main scene
 
 func _input(event):
-	# Check if the input action "ui_accept" (typically the "Enter" or "Space" key) is pressed
 	if event.is_action_pressed("ui_cancel"):
-		# Change to the preloaded main scene
-		get_tree().change_scene_to_packed(main_scene)
+		var scene = ResourceLoader.load("res://scenes/start.tscn")
+		if scene:
+			get_tree().change_scene_to_packed(scene)
+		else:
+			print("Error: Failed to load scene.")

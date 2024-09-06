@@ -1,4 +1,4 @@
-[gd_scene load_steps=77 format=3 uid="uid://3tfkgi66bt6p"]
+[gd_scene load_steps=87 format=3 uid="uid://3tfkgi66bt6p"]
 
 [ext_resource type="Script" path="res://scripts/home.gd" id="1_a7oc0"]
 [ext_resource type="Texture2D" uid="uid://cxuur7fbhma26" path="res://assets/sprites/backgrounds/Fart_House_BKG.png" id="1_xw020"]
@@ -16,6 +16,7 @@
 [ext_resource type="Texture2D" uid="uid://b7e84518oqihi" path="res://assets/sprites/Slime/PillarSlime/PillarSlime1.png" id="6_7fnqs"]
 [ext_resource type="Texture2D" uid="uid://b4vfmlutanwng" path="res://assets/sprites/player/Fart-house-character-sprite-shoot/Fart-house-character-sprite-shoot3.png" id="6_pl6dl"]
 [ext_resource type="Texture2D" uid="uid://cl2cjq6pygr5j" path="res://assets/sprites/player/Fart-house-character-sprite-shoot/Fart-house-character-sprite-shoot4.png" id="7_4njqb"]
+[ext_resource type="Texture2D" uid="uid://dnplk3ddta54h" path="res://assets/sprites/backgrounds/green.png" id="7_5be1n"]
 [ext_resource type="Texture2D" uid="uid://cgbm06ngkwqwf" path="res://assets/sprites/Slime/PillarSlime/PillarSlime2.png" id="7_irgur"]
 [ext_resource type="Texture2D" uid="uid://tb6ipgndr4k4" path="res://assets/sprites/player/Fart/Fart0.png" id="8_4xfbe"]
 [ext_resource type="Texture2D" uid="uid://bwj0rvv08gpj4" path="res://assets/sprites/Slime/PillarSlime/PillarSlime3.png" id="8_43hw1"]
@@ -59,6 +60,13 @@
 [ext_resource type="AudioStream" uid="uid://wih4y5vq6va1" path="res://assets/sounds /sfx/HD Audio - Destruction - Gunshot Explosion Close.mp3" id="56_grqi1"]
 [ext_resource type="Texture2D" uid="uid://vxtf82g8w1k0" path="res://assets/sprites/backgrounds/First_Game.png" id="58_tjppy"]
 [ext_resource type="Script" path="res://scripts/text.gd" id="59_ghlg3"]
+[ext_resource type="Texture2D" uid="uid://bx2t34p07k3xm" path="res://assets/sprites/Transition/PNG_0001.png" id="61_kloo4"]
+[ext_resource type="Texture2D" uid="uid://burcp6s7mh71l" path="res://assets/sprites/Transition/PNG_0002.png" id="62_qmae7"]
+[ext_resource type="Texture2D" uid="uid://h5dtalqlll4e" path="res://assets/sprites/Transition/PNG_0003.png" id="63_m8sd0"]
+[ext_resource type="Texture2D" uid="uid://d1vjtikyi43ka" path="res://assets/sprites/Transition/PNG_0004.png" id="64_yhos7"]
+[ext_resource type="Texture2D" uid="uid://d2n52d0l57ibm" path="res://assets/sprites/Transition/PNG_0005.png" id="65_2l32y"]
+[ext_resource type="Texture2D" uid="uid://c2jpydsh04nhv" path="res://assets/sprites/Transition/PNG_0006.png" id="66_8dyn5"]
+[ext_resource type="AudioStream" uid="uid://byecudr3lcc64" path="res://assets/sounds /music/Effectsworks - Cinematic Routines - Dirty Verbal Impact.mp3" id="67_6wwna"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_m53el"]
 animations = [{
@@ -271,6 +279,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nqcs4"]
 size = Vector2(108, 202)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gugd6"]
+size = Vector2(146, 286)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_13cj7"]
 animations = [{
 "frames": [{
@@ -308,6 +319,32 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pfww8"]
 size = Vector2(1140.94, 8.25)
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_nme0l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("61_kloo4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_qmae7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_m8sd0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_yhos7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_2l32y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_8dyn5")
+}],
+"loop": false,
+"name": &"default",
+"speed": 12.0
+}]
+
 [node name="Node2D" type="Node2D"]
 
 [node name="Music" type="AudioStreamPlayer2D" parent="."]
@@ -327,9 +364,14 @@ scale = Vector2(1, 1.027)
 texture = ExtResource("2_dj6wu")
 script = ExtResource("3_dhkk4")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="text" type="Sprite2D" parent="."]
 position = Vector2(4500, 540)
 texture = ExtResource("58_tjppy")
+script = ExtResource("59_ghlg3")
+
+[node name="text2" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+texture = ExtResource("7_5be1n")
 script = ExtResource("59_ghlg3")
 
 [node name="BackgroundSewer" type="Sprite2D" parent="."]
@@ -438,10 +480,12 @@ collision_layer = 2
 [node name="Collision_Pillar_Bottom" type="CollisionShape2D" parent="Pillar_01/StaticBody2D"]
 position = Vector2(5.25, 584.125)
 shape = SubResource("RectangleShape2D_rjsgp")
+one_way_collision = true
 
 [node name="Collision_Pillar_Top" type="CollisionShape2D" parent="Pillar_01/StaticBody2D"]
 position = Vector2(7.83594, -586.371)
 shape = SubResource("RectangleShape2D_rjsgp")
+one_way_collision = true
 
 [node name="slime" type="StaticBody2D" parent="Pillar_01"]
 show_behind_parent = true
@@ -461,6 +505,14 @@ light_mask = 0
 position = Vector2(2107, 548)
 shape = SubResource("RectangleShape2D_nqcs4")
 debug_color = Color(1.44392e-06, 0.645726, 0.253689, 0.42)
+
+[node name="invisible_wall" type="StaticBody2D" parent="Pillar_01"]
+collision_layer = 2048
+collision_mask = 2048
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pillar_01/invisible_wall"]
+position = Vector2(134, -7)
+shape = SubResource("RectangleShape2D_gugd6")
 
 [node name="Pillar_02" type="Sprite2D" parent="."]
 position = Vector2(3000, 540)
@@ -497,6 +549,14 @@ position = Vector2(2107, 548)
 shape = SubResource("RectangleShape2D_nqcs4")
 debug_color = Color(1.44392e-06, 0.645726, 0.253689, 0.42)
 
+[node name="invisible_wall2" type="StaticBody2D" parent="Pillar_02"]
+collision_layer = 2048
+collision_mask = 2048
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pillar_02/invisible_wall2"]
+position = Vector2(134, -7)
+shape = SubResource("RectangleShape2D_gugd6")
+
 [node name="Pillar_03" type="Sprite2D" parent="."]
 position = Vector2(4000, 540)
 texture = ExtResource("4_y33x4")
@@ -531,6 +591,14 @@ light_mask = 0
 position = Vector2(2107, 548)
 shape = SubResource("RectangleShape2D_nqcs4")
 debug_color = Color(1.44392e-06, 0.645726, 0.253689, 0.42)
+
+[node name="invisible_wall3" type="StaticBody2D" parent="Pillar_03"]
+collision_layer = 2048
+collision_mask = 2048
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pillar_03/invisible_wall3"]
+position = Vector2(134, -7)
+shape = SubResource("RectangleShape2D_gugd6")
 
 [node name="Can" type="AnimatedSprite2D" parent="."]
 light_mask = 0
@@ -609,3 +677,14 @@ theme_override_font_sizes/font_size = 30
 text = "PRESS ESC. TO RESTART"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+light_mask = 0
+position = Vector2(960, 540)
+sprite_frames = SubResource("SpriteFrames_nme0l")
+autoplay = "default"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="AnimatedSprite2D"]
+stream = ExtResource("67_6wwna")
+volume_db = -5.0
+autoplay = true
