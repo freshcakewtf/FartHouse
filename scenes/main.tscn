@@ -10,7 +10,6 @@
 [ext_resource type="Texture2D" uid="uid://cxy6fc8x5qsr3" path="res://assets/sprites/backgrounds/Fart_House_sewerHoleBKG.png" id="4_k52x2"]
 [ext_resource type="Texture2D" uid="uid://d3keeyjg7n8s3" path="res://assets/sprites/player/Fart-house-character-sprite-shoot/Fart-house-character-sprite-shoo2.png" id="4_usf5v"]
 [ext_resource type="Texture2D" uid="uid://pf34vtbpsar6" path="res://assets/sprites/pillars/Fart-house-pillar.png" id="4_y33x4"]
-[ext_resource type="Script" path="res://scripts/pillarmove.gd" id="5_3s88n"]
 [ext_resource type="Texture2D" uid="uid://d1mu86wld2y3e" path="res://assets/sprites/player/Fart-house-character-sprite-shoot/Fart-house-character-sprite-shoot1.png" id="5_8cmd7"]
 [ext_resource type="Script" path="res://scripts/pipeBKG.gd" id="5_kyxkh"]
 [ext_resource type="Texture2D" uid="uid://b7e84518oqihi" path="res://assets/sprites/Slime/PillarSlime/PillarSlime1.png" id="6_7fnqs"]
@@ -54,6 +53,7 @@
 [ext_resource type="Texture2D" uid="uid://bmjsoux7pyyp7" path="res://assets/sprites/beanCan/PNG_0002.png" id="42_bwogw"]
 [ext_resource type="Texture2D" uid="uid://dr2fkuvdym0wj" path="res://assets/sprites/beanCan/PNG_0003.png" id="43_y8y7j"]
 [ext_resource type="Texture2D" uid="uid://buus35a4pwbvm" path="res://assets/sprites/beanCan/PNG_0004.png" id="44_pium8"]
+[ext_resource type="Script" path="res://scripts/pillarmove.gd" id="45_id53f"]
 [ext_resource type="Texture2D" uid="uid://dx3dphba2ywql" path="res://assets/sprites/beanCan/PNG_0005.png" id="45_q3scu"]
 [ext_resource type="Texture2D" uid="uid://cgyd4xleula0l" path="res://assets/sprites/beanCan/PNG_0006.png" id="46_eacdi"]
 [ext_resource type="FontFile" uid="uid://diwbw0juogysb" path="res://assets/font/Arial Black.ttf" id="47_vhrvv"]
@@ -472,7 +472,7 @@ autoplay = "default"
 [node name="Pillar_01" type="Sprite2D" parent="."]
 position = Vector2(2000, 540)
 texture = ExtResource("4_y33x4")
-script = ExtResource("5_3s88n")
+script = ExtResource("45_id53f")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Pillar_01"]
 collision_layer = 2
@@ -480,12 +480,10 @@ collision_layer = 2
 [node name="Collision_Pillar_Bottom" type="CollisionShape2D" parent="Pillar_01/StaticBody2D"]
 position = Vector2(5.25, 584.125)
 shape = SubResource("RectangleShape2D_rjsgp")
-one_way_collision = true
 
 [node name="Collision_Pillar_Top" type="CollisionShape2D" parent="Pillar_01/StaticBody2D"]
 position = Vector2(7.83594, -586.371)
 shape = SubResource("RectangleShape2D_rjsgp")
-one_way_collision = true
 
 [node name="slime" type="StaticBody2D" parent="Pillar_01"]
 show_behind_parent = true
@@ -517,7 +515,7 @@ shape = SubResource("RectangleShape2D_gugd6")
 [node name="Pillar_02" type="Sprite2D" parent="."]
 position = Vector2(3000, 540)
 texture = ExtResource("4_y33x4")
-script = ExtResource("5_3s88n")
+script = ExtResource("45_id53f")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Pillar_02"]
 collision_layer = 2
@@ -560,7 +558,7 @@ shape = SubResource("RectangleShape2D_gugd6")
 [node name="Pillar_03" type="Sprite2D" parent="."]
 position = Vector2(4000, 540)
 texture = ExtResource("4_y33x4")
-script = ExtResource("5_3s88n")
+script = ExtResource("45_id53f")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Pillar_03"]
 collision_layer = 2
@@ -688,3 +686,6 @@ autoplay = "default"
 stream = ExtResource("67_6wwna")
 volume_db = -5.0
 autoplay = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+offset = Vector2(960, 540)

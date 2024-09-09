@@ -19,6 +19,8 @@ config/icon="res://icon.svg"
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
+window/size/initial_position_type=0
+window/size/initial_position=Vector2i(960, 540)
 
 [input]
 
@@ -86,3 +88,8 @@ escape={
 2d_render/layer_1="Character"
 2d_render/layer_2="Pillar"
 2d_physics/layer_1="Character"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

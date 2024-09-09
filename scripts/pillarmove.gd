@@ -64,4 +64,3 @@ func increase_speed():
 	# Increase the speed of the pillar movement
 	if speed < max_speed:  # Optional: cap the speed at max_speed
 		speed += speed_increment
-		

@@ -1,10 +1,2 @@
-res://scenes/main.tscn
 res://scenes/start.tscn
-res://scripts/home.gd
-res://scripts/pillarMove.gd
-res://scripts/playerControl.gd
-res://scripts/bean.gd
-res://scripts/Brickmove.gd
-res://scripts/fart.gd
-res://scripts/StartScreen.gd
-res://scripts/text.gd
+res://scenes/main.tscn

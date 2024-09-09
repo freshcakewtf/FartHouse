@@ -283,7 +283,7 @@ theme_override_constants/shadow_outline_size = 10
 theme_override_fonts/font = ExtResource("14_iehi7")
 theme_override_font_sizes/font_size = 40
 text = "Arrow Keys Move | Space Bar Farts
-Bean are for points"
+Beans are for points"
 horizontal_alignment = 1
 vertical_alignment = 1
 
