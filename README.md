@@ -1,5 +1,7 @@
 # Fart House
 
+[banner](assets/Fart House_Cover.png)
+
 **Ever wondered what it would be like if your house had a bum? Wonder no more!**
 
 In **Fart House**, you take control of a house with a hearty rear end, soaring through a linear world of sewage pipes and beans. Yes, you read that right—a flying butt-house that farts its way across this Flappy Bird-style game!
