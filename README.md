@@ -1,6 +1,6 @@
 # Fart House
 
-![Banner](assets/Fart House_Cover.png)
+![Banner](assets/FartHouse_Cover.png)
 
 **Ever wondered what it would be like if your house had a bum? Wonder no more!**
 
